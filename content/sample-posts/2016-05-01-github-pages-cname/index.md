@@ -4,6 +4,7 @@ cover: 'images/cover6.jpg'
 author: "wecanooo"
 date:   2016-05-01 10:18:00
 category: "tech"
+logo: '/logos/dream.png'
 tags:
   - blog
   - jekyll

@@ -4,6 +4,7 @@ cover: 'images/cover6.jpg'
 author: "wecanooo"
 date:   2016-05-26 20:12:00
 category: "tech"
+logo: '/logos/dream.png'
 tags:
   - sidekiq
   - redis
