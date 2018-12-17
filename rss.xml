@@ -1,107 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The way to find a dream]]></title><description><![CDATA[dreams.each { |dream| puts "a #{dream} is in my heart" }]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>The way to find a dream</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Mon, 17 Dec 2018 11:00:08 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2018]]></copyright><item><title><![CDATA[Heroku 환경에서 Sidekiq, Redis 이용하기]]></title><description><![CDATA[최근에 개인적으로  Heroku  Free Tier를 이용하여 App을 배포하는 경우가 생겼는데 Puma + Sidekiq + Redis 환경을 설정하는데 좀 삽질을 한 경험이 있어 정리하고자 한다. Gem 설정 {% highlight ruby…]]></description><link>https://wecanooo.github.io/story/heroku-환경에서-sidekiq-redis-이용하기</link><guid isPermaLink="false">https://wecanooo.github.io/story/heroku-환경에서-sidekiq-redis-이용하기</guid><category><![CDATA[sidekiq]]></category><category><![CDATA[redis]]></category><category><![CDATA[heroku]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Thu, 26 May 2016 20:12:00 GMT</pubDate><content:encoded>&lt;p&gt;최근에 개인적으로 &lt;a href=&quot;http://heroku.com/&quot;&gt;Heroku&lt;/a&gt; Free Tier를 이용하여 App을 배포하는 경우가 생겼는데 Puma + Sidekiq + Redis 환경을 설정하는데 좀 삽질을 한 경험이 있어 정리하고자 한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The way to find a dream]]></title><description><![CDATA[dreams.each { |dream| puts "a #{dream} is in my heart" }]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>The way to find a dream</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Mon, 17 Dec 2018 11:51:40 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2018]]></copyright><item><title><![CDATA[Heroku 환경에서 Sidekiq, Redis 이용하기]]></title><description><![CDATA[최근에 개인적으로  Heroku  Free Tier를 이용하여 App을 배포하는 경우가 생겼는데 Puma + Sidekiq + Redis 환경을 설정하는데 좀 삽질을 한 경험이 있어 정리하고자 한다. Gem…]]></description><link>https://wecanooo.github.io/story/heroku-환경에서-sidekiq-redis-이용하기</link><guid isPermaLink="false">https://wecanooo.github.io/story/heroku-환경에서-sidekiq-redis-이용하기</guid><category><![CDATA[sidekiq]]></category><category><![CDATA[redis]]></category><category><![CDATA[heroku]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Thu, 26 May 2016 20:12:00 GMT</pubDate><content:encoded>&lt;p&gt;최근에 개인적으로 &lt;a href=&quot;http://heroku.com/&quot;&gt;Heroku&lt;/a&gt; Free Tier를 이용하여 App을 배포하는 경우가 생겼는데 Puma + Sidekiq + Redis 환경을 설정하는데 좀 삽질을 한 경험이 있어 정리하고자 한다.&lt;/p&gt;
 &lt;h3 id=&quot;gem-설정&quot;&gt;&lt;a href=&quot;#gem-%EC%84%A4%EC%A0%95&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gem 설정&lt;/h3&gt;
-&lt;p&gt;{% highlight ruby %}
-gem &apos;rails&apos;, &apos;4.2.6&apos;
-gem &apos;puma&apos;, &apos;~&gt; 2.15&apos;
-gem &apos;sidekiq&apos;, &apos;~&gt; 4.0&apos;
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem &lt;span class=&quot;token string&quot;&gt;&apos;rails&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;4.2.6&apos;&lt;/span&gt;
+gem &lt;span class=&quot;token string&quot;&gt;&apos;puma&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;~&gt; 2.15&apos;&lt;/span&gt;
+gem &lt;span class=&quot;token string&quot;&gt;&apos;sidekiq&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;~&gt; 4.0&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;이전에 진행했었던 프로젝트에서는 puma 대신 unicorn을 이용했었는데, Heroku 환경에서는 puma가 default이고 최근 많이들 unicorn에서 puma로 넘어가는 추세인 것 같아 puma를 이용하기로 했다.&lt;/p&gt;
 &lt;h3 id=&quot;프로그램-설정-및-heroku-설정&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%A0%95-%EB%B0%8F-heroku-%EC%84%A4%EC%A0%95&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로그램 설정 및 Heroku 설정&lt;/h3&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;configpumarb&quot;&gt;&lt;a href=&quot;#configpumarb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;config/puma.rb&lt;/h1&gt;
-&lt;p&gt;workers Integer(ENV[&apos;WEB_CONCURRENCY&apos;] || 2)
-threads&lt;em&gt;count = Integer(ENV[&apos;MAX&lt;/em&gt;THREADS&apos;] || 5)
-threads threads&lt;em&gt;count, threads&lt;/em&gt;count&lt;/p&gt;
-&lt;p&gt;preload_app!&lt;/p&gt;
-&lt;p&gt;rackup      DefaultRackup
-port        ENV[&apos;PORT&apos;]     || 3000
-environment ENV[&apos;RACK_ENV&apos;] || &apos;development&apos;&lt;/p&gt;
-&lt;p&gt;on&lt;em&gt;worker&lt;/em&gt;boot do&lt;/p&gt;
-&lt;h1 id=&quot;worker-specific-setup-for-rails-41&quot;&gt;&lt;a href=&quot;#worker-specific-setup-for-rails-41&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Worker specific setup for Rails 4.1+&lt;/h1&gt;
-&lt;h1 id=&quot;see-httpsdevcenterherokucomarticlesdeploying-rails-applications-with-the-puma-web-serveron-worker-boot&quot;&gt;&lt;a href=&quot;#see-httpsdevcenterherokucomarticlesdeploying-rails-applications-with-the-puma-web-serveron-worker-boot&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;See: &lt;a href=&quot;https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#on-worker-boot&quot;&gt;https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#on-worker-boot&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;  @sidekiq&lt;em&gt;pid ||= spawn(&apos;bundle exec sidekiq -c 2 -q default -q mailer&apos;)
-ActiveRecord::Base.establish&lt;/em&gt;connection
-end&lt;/p&gt;
-&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# config/puma.rb&lt;/span&gt;
+
+workers &lt;span class=&quot;token function&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;WEB_CONCURRENCY&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+threads_count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;MAX_THREADS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+threads threads_count&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; threads_count
+
+preload_app&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+
+rackup      &lt;span class=&quot;token constant&quot;&gt;DefaultRackup&lt;/span&gt;
+port        &lt;span class=&quot;token constant&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;PORT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;     &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3000&lt;/span&gt;
+environment &lt;span class=&quot;token constant&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;RACK_ENV&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;development&apos;&lt;/span&gt;
+
+on_worker_boot &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# Worker specific setup for Rails 4.1+&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# See: https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#on-worker-boot&lt;/span&gt;
+  &lt;span class=&quot;token variable&quot;&gt;@sidekiq_pid&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;spawn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;bundle exec sidekiq -c 2 -q default -q mailer&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token constant&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:Base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;establish_connection
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;puma가 시작될 때 sidekiq을 몇 가지 옵션과 함께 실행도로록 했다. queue는 default, mailer queue를 생성했다.
 이제 heroku에서 web instance를 실행하기 위해 Procfile을 작성할 차례이다.&lt;/p&gt;
 &lt;p&gt;예전에 unicorn 환경에서 배포를 할 때는 아래와 같이 web과 redis, worker를 별도로 돌렸었다.&lt;/p&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;procfile-with-unicorn--nginx--ubuntu-1404&quot;&gt;&lt;a href=&quot;#procfile-with-unicorn--nginx--ubuntu-1404&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Procfile with unicorn + nginx + ubuntu 14.04&lt;/h1&gt;
-&lt;p&gt;web: rails s -b 0.0.0.0
-redis: redis-server
-worker: bundle exec sidekiq -C config/sidekiq.yml
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Procfile with unicorn + nginx + ubuntu 14.04&lt;/span&gt;
+
+web&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; rails s &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;b &lt;span class=&quot;token number&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0.0&lt;/span&gt;
+redis&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; redis&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;server
+worker&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; bundle exec sidekiq &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;C&lt;/span&gt; config&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;sidekiq&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;yml&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;지금은 Heroku에 배포할 것이기 때문에 redis-server는 Heroku redistogo add-on 으로 대체하고, sidekiq은 puma 시작 시 같이 실행하도록 할 것이기 때문에 Procfile은 좀 더 간단하게 유지할 수 있다.&lt;/p&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;procfile-with-puma--heroku&quot;&gt;&lt;a href=&quot;#procfile-with-puma--heroku&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Procfile with puma + heroku&lt;/h1&gt;
-&lt;p&gt;web: bundle exec puma -C config/puma.rb
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Procfile with puma + heroku&lt;/span&gt;
+
+web&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; bundle exec puma &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;C&lt;/span&gt; config&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;puma&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rb&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;이제 위에서 말한 &lt;a href=&quot;https://elements.heroku.com/addons/redistogo&quot;&gt;redistogo&lt;/a&gt;를 설치하고 환경설정 값을 지정할 차례다.
 터미널에서 아래의 명령을 실행하자. &lt;a href=&quot;https://toolbelt.heroku.com/&quot;&gt;Heroku Toolbelt&lt;/a&gt;는 이미 설치되어 있다고 가정한다.&lt;/p&gt;
-&lt;p&gt;{% highlight shell %}
-$ heroku addons:create redistogo
-$ heroku config:set REDIS&lt;em&gt;PROVIDER=REDISTOGO&lt;/em&gt;URL
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ heroku addons:create redistogo
+$ heroku config:set REDIS_PROVIDER=REDISTOGO_URL&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Heroku에 sidekiq + redis를 통해 ActiveJob을 돌릴 수 있는 준비는 되었고, ActiveJob Adapter를 sidekiq으로 지정하기 위해 ActiveJob Queue Adapter를 sidekiq으로 지정한다.&lt;/p&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;configapplicationrb&quot;&gt;&lt;a href=&quot;#configapplicationrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;config/application.rb&lt;/h1&gt;
-&lt;p&gt;class Application &amp;#x3C; Rails::Application&lt;/p&gt;
-&lt;p&gt;  config.active&lt;em&gt;job.queue&lt;/em&gt;adapter = :sidekiq&lt;/p&gt;
-&lt;p&gt;end
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# config/application.rb&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Application&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;Rails&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:Application&lt;/span&gt;
+
+  config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;active_job&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue_adapter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:sidekiq&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;h3 id=&quot;rails-코딩&quot;&gt;&lt;a href=&quot;#rails-%EC%BD%94%EB%94%A9&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rails 코딩&lt;/h3&gt;
 &lt;p&gt;환영 메일을 보내기 위한 Mailer 생성&lt;/p&gt;
-&lt;p&gt;{% highlight shell %}
-$ rails generator mailer UserMailer
-{% endhighlight %}&lt;/p&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;appmaileruser_mailerrb&quot;&gt;&lt;a href=&quot;#appmaileruser_mailerrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app/mailer/user_mailer.rb&lt;/h1&gt;
-&lt;p&gt;class UserMailer &amp;#x3C; ApplicationMailer&lt;/p&gt;
-&lt;p&gt;  def welcome_email(user)
-@user = user
-mail to: @user.email, subject: t(&apos;email.welcome.subject&apos;) unless @user.email.empty?
-end&lt;/p&gt;
-&lt;p&gt;end&lt;/p&gt;
-&lt;p&gt;{% endhighlight %}&lt;/p&gt;
-&lt;p&gt;환영메일 전송을 백그라운드에서 처리하기 위해 ActiveJob 생성&lt;/p&gt;
-&lt;p&gt;{% highlight shell %}
-$ rails generator job welcome_email --queue mailer
-{% endhighlight %}&lt;/p&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;appjobswelcomeemailjobrb&quot;&gt;&lt;a href=&quot;#appjobswelcomeemailjobrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app/jobs/welcome&lt;em&gt;email&lt;/em&gt;job.rb&lt;/h1&gt;
-&lt;p&gt;class WelcomeEmailJob &amp;#x3C; ActiveJob::Base
-queue_as :mailer&lt;/p&gt;
-&lt;p&gt;  def perform(user&lt;em&gt;id)
-user = User.find&lt;/em&gt;by(id: user&lt;em&gt;id)
-UserMailer.welcome&lt;/em&gt;email(user).deliver_now if user
-end
-end&lt;/p&gt;
-&lt;p&gt;{% endhighlight %}&lt;/p&gt;
-&lt;p&gt;이제 최종적으로 회원가입을 통해 사용자가 생성되었을 경우 환영메일을 전송&lt;/p&gt;
-&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
-&lt;h1 id=&quot;appmodelsuserrb&quot;&gt;&lt;a href=&quot;#appmodelsuserrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app/models/user.rb&lt;/h1&gt;
-&lt;p&gt;class User &amp;#x3C; ActiveRecord::Base&lt;/p&gt;
-&lt;p&gt;  after&lt;em&gt;create :process&lt;/em&gt;after_create!&lt;/p&gt;
-&lt;p&gt;  private&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;def process_after_create!
-  self.access_token = generate_access_token
-  if save!
-    # 환영메일 전송
-    WelcomeEmailJob.perform_later(self.id)
-  end
-end
-
-def generate_access_token
-  loop do
-    token = &amp;quot;#{self.id}:#{Devise.friendly_token}&amp;quot;
-    break token unless User.where(access_token: token).first
-  end
-end&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ rails generator mailer UserMailer&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;end&lt;/p&gt;
-&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# app/mailer/user_mailer.rb&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;UserMailer&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;ApplicationMailer&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;welcome_email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;user&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token variable&quot;&gt;@user&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; user
+    mail to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;@user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; subject&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;email.welcome.subject&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;@user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;empty&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;환영메일 전송을 백그라운드에서 처리하기 위해 ActiveJob 생성&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ rails generator job welcome_email --queue mailer&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# app/jobs/welcome_email_job.rb&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WelcomeEmailJob&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;ActiveJob&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:Base&lt;/span&gt;
+  queue_as &lt;span class=&quot;token symbol&quot;&gt;:mailer&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;perform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;user_id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    user &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find_by&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; user_id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;UserMailer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;welcome_email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;user&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;deliver_now &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; user
+  &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;이제 최종적으로 회원가입을 통해 사용자가 생성되었을 경우 환영메일을 전송&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# app/models/user.rb&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:Base&lt;/span&gt;
+
+  after_create &lt;span class=&quot;token symbol&quot;&gt;:process_after_create!&lt;/span&gt;
+
+  private
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; process_after_create&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;access_token &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; generate_access_token
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; save&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;# 환영메일 전송&lt;/span&gt;
+        &lt;span class=&quot;token constant&quot;&gt;WelcomeEmailJob&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;perform_later&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; generate_access_token
+      loop &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+        token &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token delimiter tag&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token delimiter tag&quot;&gt;}&lt;/span&gt;&lt;/span&gt;:&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token delimiter tag&quot;&gt;#{&lt;/span&gt;Devise&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;friendly_token&lt;span class=&quot;token delimiter tag&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt; token &lt;span class=&quot;token keyword&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;access_token&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; token&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;first
+      &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;이메일을 비동기로 전송할 수 있는 방법은 위의 방법 외에도 더 좋은 방법들이 있을 수 있다.
 개인적인 코딩 취향에 따라 작성하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2016년 5월 TIOBE 순위]]></title><description><![CDATA[원문 :  http://www.tiobe.com/tiobe_index 2016년 5월 TIOBE Index 헤드라인 : 루비가 과거 루비의 가장 높은 순위와 같아지다. 루비가 현재 TIOBE Index에서…]]></description><link>https://wecanooo.github.io/story/2016-년-5-월-tiobe-순위</link><guid isPermaLink="false">https://wecanooo.github.io/story/2016-년-5-월-tiobe-순위</guid><category><![CDATA[ruby]]></category><category><![CDATA[rank]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Thu, 12 May 2016 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/tiobe.png&quot; alt=&quot;TIOBE Index&quot;&gt;&lt;/p&gt;
 &lt;p&gt;원문 : &lt;a href=&quot;http://www.tiobe.com/tiobe_index&quot;&gt;http://www.tiobe.com/tiobe_index&lt;/a&gt;&lt;/p&gt;
@@ -141,9 +158,9 @@ DNS의 변경이기 때문에 바로 적용될 수도 있고, 때에 따라서�
 그런데, 이렇게 만들어진 사이트는 기본 정보만 가지고 있는 소개 페이지 정도여서 블로그로 사용하기에는 적합하지 않다. 따라서, 우리는 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt;를 이용하여 이미 만들어진 사이트를 블로그처럼 만들 필요가 있다.&lt;/p&gt;
 &lt;h3 id=&quot;git-clone을-통해-소스-내려받기&quot;&gt;&lt;a href=&quot;#git-clone%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%86%8C%EC%8A%A4-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git Clone을 통해 소스 내려받기&lt;/h3&gt;
 &lt;p&gt;Jekyll Theme를 다운로드 받기 전에 &lt;code class=&quot;language-text&quot;&gt;git clone&lt;/code&gt; 명령을 통해 이전 에피소드에서 만들었던 저장소를 로컬 컴퓨터로 내려 받도록 하겠다. 저장소의 경로는 각자의 경로가 모두 다르기 때문에 본인의 저장소 경로를 확인하여야 한다.&lt;/p&gt;
-&lt;p&gt;{% highlight shell %}
-$ git clone &lt;a href=&quot;https://github.com/haassl/haassl.github.io.git&quot;&gt;https://github.com/haassl/haassl.github.io.git&lt;/a&gt;
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git clone https://github.com/haassl/haassl.github.io.git&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;위의 명령을 수행하면 &lt;code class=&quot;language-text&quot;&gt;haassl.github.io&lt;/code&gt; 폴더가 생성이 된다. 해당 폴더 내에는 이전 에피소드에서 생성되었던 파일들이 존재하는 것을 확인할 수 있다. 이제 이 폴더에 Jekyll Theme 파일을 적용하기 위해 &lt;code class=&quot;language-text&quot;&gt;haassl.github.io&lt;/code&gt; 폴더 내의 모든 파일은 삭제하도록 한다.&lt;/p&gt;
 &lt;h3 id=&quot;jekyll-theme-다운로드-받기&quot;&gt;&lt;a href=&quot;#jekyll-theme-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B0%9B%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jekyll Theme 다운로드 받기&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 사이트로 이동하면 많은 Theme 가 존재한다. 지금 글이 작성되고 있는 이 블로그도 Github Page와 Jekyll Theme를 이용한 블로그인데 편의상 같은 Theme를 다운로드 받아서 만들어 보겠다.&lt;/p&gt;
@@ -151,20 +168,20 @@ $ git clone &lt;a href=&quot;https://github.com/haassl/haassl.github.io.git&quot
 &lt;h3 id=&quot;jekyll-설치하기&quot;&gt;&lt;a href=&quot;#jekyll-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jekyll 설치하기&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://jekyllrb-ko.github.io/&quot;&gt;Jekyll&lt;/a&gt;은 정적파일을 블로그나 웹사이트로 제작할 수 있도록 하는 강력한 도구이다.
 Jekyll에 대한 안내는 사이트에서 자세하게 안내하고 있으니 참고하기 바란다. Mac 에서 Jekyll 설치는 아주 간단하게 설치가 가능하다.&lt;/p&gt;
-&lt;p&gt;{% highlight shell %}
-$ gem install jekyll
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ gem install jekyll&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Jekyll을 설치한 뒤 화면을 확인하기 위해서는 작업경로로 이동한 뒤 아래의 명령을 수행하면 된다.&lt;/p&gt;
-&lt;p&gt;{% highlight shell %}
-$ jekyll serve -w
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ jekyll serve -w&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;이제 &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt; 에서 화면을 확인할 수 있다.&lt;/p&gt;
 &lt;h3 id=&quot;jekyll-theme-서버에-적용하기&quot;&gt;&lt;a href=&quot;#jekyll-theme-%EC%84%9C%EB%B2%84%EC%97%90-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jekyll Theme 서버에 적용하기&lt;/h3&gt;
-&lt;p&gt;{% highlight shell %}
-$ git add --all
-$ git commit -m &quot;Initial Commit&quot;
-$ git push origin master
-{% endhighlight %}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ git add --all
+$ git commit -m &amp;quot;Initial Commit&amp;quot;
+$ git push origin master&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Github의 계정을 물어보면 계정정보를 입력하여 서버로 Theme를 올린다.&lt;/p&gt;
 &lt;p&gt;이제 &lt;strong&gt;[UserName].github.io&lt;/strong&gt; 를 방문해 보면 변경된 Theme가 적용된 것을 확인할 수 있다.&lt;/p&gt;
 &lt;h3 id=&quot;안내영상&quot;&gt;&lt;a href=&quot;#%EC%95%88%EB%82%B4%EC%98%81%EC%83%81&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;안내영상&lt;/h3&gt;
