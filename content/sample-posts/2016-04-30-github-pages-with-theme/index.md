@@ -21,9 +21,9 @@ tags:
 
 Jekyll Theme를 다운로드 받기 전에 `git clone` 명령을 통해 이전 에피소드에서 만들었던 저장소를 로컬 컴퓨터로 내려 받도록 하겠다. 저장소의 경로는 각자의 경로가 모두 다르기 때문에 본인의 저장소 경로를 확인하여야 한다.
 
-{% highlight shell %}
+```shell
 $ git clone https://github.com/haassl/haassl.github.io.git
-{% endhighlight %}
+```
 
 위의 명령을 수행하면 `haassl.github.io` 폴더가 생성이 된다. 해당 폴더 내에는 이전 에피소드에서 생성되었던 파일들이 존재하는 것을 확인할 수 있다. 이제 이 폴더에 Jekyll Theme 파일을 적용하기 위해 `haassl.github.io` 폴더 내의 모든 파일은 삭제하도록 한다.
 
@@ -38,25 +38,25 @@ Jekyll Theme 중 [Moon Theme](http://jekyllthemes.org/themes/moon/) 를 선택�
 [Jekyll](https://jekyllrb-ko.github.io/)은 정적파일을 블로그나 웹사이트로 제작할 수 있도록 하는 강력한 도구이다.
 Jekyll에 대한 안내는 사이트에서 자세하게 안내하고 있으니 참고하기 바란다. Mac 에서 Jekyll 설치는 아주 간단하게 설치가 가능하다.
 
-{% highlight shell %}
+```shell
 $ gem install jekyll
-{% endhighlight %}
+```
 
 Jekyll을 설치한 뒤 화면을 확인하기 위해서는 작업경로로 이동한 뒤 아래의 명령을 수행하면 된다.
 
-{% highlight shell %}
+```shell
 $ jekyll serve -w
-{% endhighlight %}
+```
 
 이제 http://localhost:4000 에서 화면을 확인할 수 있다.
 
 ### Jekyll Theme 서버에 적용하기
 
-{% highlight shell %}
+```shell
 $ git add --all
 $ git commit -m "Initial Commit"
 $ git push origin master
-{% endhighlight %}
+```
 
 Github의 계정을 물어보면 계정정보를 입력하여 서버로 Theme를 올린다.
 
