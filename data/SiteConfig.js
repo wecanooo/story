@@ -6,7 +6,7 @@ module.exports = {
   siteTitleAlt: "STUnitas 개발자의 블로그", // Alternative site title for SEO.
   siteLogo: "/logos/dream.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://wecanooo.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/blog", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
+  pathPrefix: "/story", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'dreams.each { |dream| puts "a #{dream} is in my heart" }', // Website description used for RSS feeds/meta description tag.
   siteCover: "https://haysclark.github.io/gatsby-starter-casper/images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
