@@ -365,12 +365,25 @@ li > p:last-of-type {
 }
 
 hr {
-    display: block;
+    border: none;
+    height: auto;
+    margin: 40px auto 80px;
+    text-align: center;
+    /* display: block;
     height: 1px;
     border: 0;
     border-top: #efefef 1px solid;
     margin: 3.2em 0;
-    padding: 0;
+    padding: 0; */
+}
+
+hr::before {
+    content: "...";
+    color: #555;
+    display: inline-block;
+    letter-spacing: 0.6em;
+    font-size: 1.5em;
+    font-family: serif;
 }
 
 blockquote {

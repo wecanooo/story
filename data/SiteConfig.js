@@ -14,8 +14,8 @@ module.exports = {
   siteRssAuthor: "wecanooo", // The author name used in the RSS file
   // siteFBAppID: "1825356251115265", // optional, sets the FB Application ID for using app insights
   sitePaginationLimit: 10, // The max number of posts per page.
-  googleAnalyticsID: "102", // GA tracking ID.
-  // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // enables Disqus comments, visually deviates from original Casper theme.
+  googleAnalyticsID: "UA-77648426-1", // GA tracking ID.
+  disqusShortname: "wecanooo", // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [
     "https://github.com/wecanooo",
     "https://twitter.com/wecanooo",
