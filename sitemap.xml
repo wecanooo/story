@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://wecanooo.github.io/story/story/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://wecanooo.github.io/story/story/the-fallen-time</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/heroku-환경에서-sidekiq-redis-이용하기</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/2016-년-5-월-tiobe-순위</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/github와-jekyll을-이용한-무료-블로그-만들기-4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/github와-jekyll을-이용한-무료-블로그-만들기-3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/github와-jekyll을-이용한-무료-블로그-만들기-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/github와-jekyll을-이용한-무료-블로그-만들기-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://wecanooo.github.io/story/story/tags/test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://wecanooo.github.io/story/story/tags/something/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://wecanooo.github.io/story/story/tags/tagging/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/tags/sidekiq/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/tags/redis/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/tags/heroku/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/tags/ruby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://wecanooo.github.io/story/story/tags/rank/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/tags/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/tags/jekyll/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/tags/github/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://wecanooo.github.io/story/story/categories/another-one/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/author/wecanooo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://wecanooo.github.io/story/story/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

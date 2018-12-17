@@ -1,65 +1,228 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The way to find a dream]]></title><description><![CDATA[dreams.each { |dream| puts "a #{dream} is in my heart" }]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>The way to find a dream</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Mon, 17 Dec 2018 10:42:44 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2018]]></copyright><item><title><![CDATA[The Fallen Time]]></title><description><![CDATA[Autolyci eminus retenta Hoc domum solitos veteremque nostrum Lorem markdownum huc suo ara, dubites celeri mihi bicolor. Secuti non? Suo opus…]]></description><link>https://wecanooo.github.io/story/the-fallen-time</link><guid isPermaLink="false">https://wecanooo.github.io/story/the-fallen-time</guid><category><![CDATA[test]]></category><category><![CDATA[something]]></category><category><![CDATA[tagging]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Mon, 02 Jan 2017 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;autolyci-eminus-retenta&quot;&gt;&lt;a href=&quot;#autolyci-eminus-retenta&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Autolyci eminus retenta&lt;/h1&gt;
-&lt;h2 id=&quot;hoc-domum-solitos-veteremque-nostrum&quot;&gt;&lt;a href=&quot;#hoc-domum-solitos-veteremque-nostrum&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hoc domum solitos veteremque nostrum&lt;/h2&gt;
-&lt;p&gt;Lorem markdownum huc suo ara, dubites celeri mihi bicolor. Secuti non? Suo opus
-quales dant, puppim hanc!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The way to find a dream]]></title><description><![CDATA[dreams.each { |dream| puts "a #{dream} is in my heart" }]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>The way to find a dream</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Mon, 17 Dec 2018 11:00:08 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2018]]></copyright><item><title><![CDATA[Heroku 환경에서 Sidekiq, Redis 이용하기]]></title><description><![CDATA[최근에 개인적으로  Heroku  Free Tier를 이용하여 App을 배포하는 경우가 생겼는데 Puma + Sidekiq + Redis 환경을 설정하는데 좀 삽질을 한 경험이 있어 정리하고자 한다. Gem 설정 {% highlight ruby…]]></description><link>https://wecanooo.github.io/story/heroku-환경에서-sidekiq-redis-이용하기</link><guid isPermaLink="false">https://wecanooo.github.io/story/heroku-환경에서-sidekiq-redis-이용하기</guid><category><![CDATA[sidekiq]]></category><category><![CDATA[redis]]></category><category><![CDATA[heroku]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Thu, 26 May 2016 20:12:00 GMT</pubDate><content:encoded>&lt;p&gt;최근에 개인적으로 &lt;a href=&quot;http://heroku.com/&quot;&gt;Heroku&lt;/a&gt; Free Tier를 이용하여 App을 배포하는 경우가 생겼는데 Puma + Sidekiq + Redis 환경을 설정하는데 좀 삽질을 한 경험이 있어 정리하고자 한다.&lt;/p&gt;
+&lt;h3 id=&quot;gem-설정&quot;&gt;&lt;a href=&quot;#gem-%EC%84%A4%EC%A0%95&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gem 설정&lt;/h3&gt;
+&lt;p&gt;{% highlight ruby %}
+gem &apos;rails&apos;, &apos;4.2.6&apos;
+gem &apos;puma&apos;, &apos;~&gt; 2.15&apos;
+gem &apos;sidekiq&apos;, &apos;~&gt; 4.0&apos;
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;이전에 진행했었던 프로젝트에서는 puma 대신 unicorn을 이용했었는데, Heroku 환경에서는 puma가 default이고 최근 많이들 unicorn에서 puma로 넘어가는 추세인 것 같아 puma를 이용하기로 했다.&lt;/p&gt;
+&lt;h3 id=&quot;프로그램-설정-및-heroku-설정&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%A0%95-%EB%B0%8F-heroku-%EC%84%A4%EC%A0%95&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로그램 설정 및 Heroku 설정&lt;/h3&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;configpumarb&quot;&gt;&lt;a href=&quot;#configpumarb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;config/puma.rb&lt;/h1&gt;
+&lt;p&gt;workers Integer(ENV[&apos;WEB_CONCURRENCY&apos;] || 2)
+threads&lt;em&gt;count = Integer(ENV[&apos;MAX&lt;/em&gt;THREADS&apos;] || 5)
+threads threads&lt;em&gt;count, threads&lt;/em&gt;count&lt;/p&gt;
+&lt;p&gt;preload_app!&lt;/p&gt;
+&lt;p&gt;rackup      DefaultRackup
+port        ENV[&apos;PORT&apos;]     || 3000
+environment ENV[&apos;RACK_ENV&apos;] || &apos;development&apos;&lt;/p&gt;
+&lt;p&gt;on&lt;em&gt;worker&lt;/em&gt;boot do&lt;/p&gt;
+&lt;h1 id=&quot;worker-specific-setup-for-rails-41&quot;&gt;&lt;a href=&quot;#worker-specific-setup-for-rails-41&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Worker specific setup for Rails 4.1+&lt;/h1&gt;
+&lt;h1 id=&quot;see-httpsdevcenterherokucomarticlesdeploying-rails-applications-with-the-puma-web-serveron-worker-boot&quot;&gt;&lt;a href=&quot;#see-httpsdevcenterherokucomarticlesdeploying-rails-applications-with-the-puma-web-serveron-worker-boot&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;See: &lt;a href=&quot;https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#on-worker-boot&quot;&gt;https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#on-worker-boot&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;  @sidekiq&lt;em&gt;pid ||= spawn(&apos;bundle exec sidekiq -c 2 -q default -q mailer&apos;)
+ActiveRecord::Base.establish&lt;/em&gt;connection
+end&lt;/p&gt;
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;puma가 시작될 때 sidekiq을 몇 가지 옵션과 함께 실행도로록 했다. queue는 default, mailer queue를 생성했다.
+이제 heroku에서 web instance를 실행하기 위해 Procfile을 작성할 차례이다.&lt;/p&gt;
+&lt;p&gt;예전에 unicorn 환경에서 배포를 할 때는 아래와 같이 web과 redis, worker를 별도로 돌렸었다.&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;procfile-with-unicorn--nginx--ubuntu-1404&quot;&gt;&lt;a href=&quot;#procfile-with-unicorn--nginx--ubuntu-1404&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Procfile with unicorn + nginx + ubuntu 14.04&lt;/h1&gt;
+&lt;p&gt;web: rails s -b 0.0.0.0
+redis: redis-server
+worker: bundle exec sidekiq -C config/sidekiq.yml
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;지금은 Heroku에 배포할 것이기 때문에 redis-server는 Heroku redistogo add-on 으로 대체하고, sidekiq은 puma 시작 시 같이 실행하도록 할 것이기 때문에 Procfile은 좀 더 간단하게 유지할 수 있다.&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;procfile-with-puma--heroku&quot;&gt;&lt;a href=&quot;#procfile-with-puma--heroku&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Procfile with puma + heroku&lt;/h1&gt;
+&lt;p&gt;web: bundle exec puma -C config/puma.rb
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;이제 위에서 말한 &lt;a href=&quot;https://elements.heroku.com/addons/redistogo&quot;&gt;redistogo&lt;/a&gt;를 설치하고 환경설정 값을 지정할 차례다.
+터미널에서 아래의 명령을 실행하자. &lt;a href=&quot;https://toolbelt.heroku.com/&quot;&gt;Heroku Toolbelt&lt;/a&gt;는 이미 설치되어 있다고 가정한다.&lt;/p&gt;
+&lt;p&gt;{% highlight shell %}
+$ heroku addons:create redistogo
+$ heroku config:set REDIS&lt;em&gt;PROVIDER=REDISTOGO&lt;/em&gt;URL
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;Heroku에 sidekiq + redis를 통해 ActiveJob을 돌릴 수 있는 준비는 되었고, ActiveJob Adapter를 sidekiq으로 지정하기 위해 ActiveJob Queue Adapter를 sidekiq으로 지정한다.&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;configapplicationrb&quot;&gt;&lt;a href=&quot;#configapplicationrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;config/application.rb&lt;/h1&gt;
+&lt;p&gt;class Application &amp;#x3C; Rails::Application&lt;/p&gt;
+&lt;p&gt;  config.active&lt;em&gt;job.queue&lt;/em&gt;adapter = :sidekiq&lt;/p&gt;
+&lt;p&gt;end
+{% endhighlight %}&lt;/p&gt;
+&lt;h3 id=&quot;rails-코딩&quot;&gt;&lt;a href=&quot;#rails-%EC%BD%94%EB%94%A9&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rails 코딩&lt;/h3&gt;
+&lt;p&gt;환영 메일을 보내기 위한 Mailer 생성&lt;/p&gt;
+&lt;p&gt;{% highlight shell %}
+$ rails generator mailer UserMailer
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;appmaileruser_mailerrb&quot;&gt;&lt;a href=&quot;#appmaileruser_mailerrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app/mailer/user_mailer.rb&lt;/h1&gt;
+&lt;p&gt;class UserMailer &amp;#x3C; ApplicationMailer&lt;/p&gt;
+&lt;p&gt;  def welcome_email(user)
+@user = user
+mail to: @user.email, subject: t(&apos;email.welcome.subject&apos;) unless @user.email.empty?
+end&lt;/p&gt;
+&lt;p&gt;end&lt;/p&gt;
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;환영메일 전송을 백그라운드에서 처리하기 위해 ActiveJob 생성&lt;/p&gt;
+&lt;p&gt;{% highlight shell %}
+$ rails generator job welcome_email --queue mailer
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;appjobswelcomeemailjobrb&quot;&gt;&lt;a href=&quot;#appjobswelcomeemailjobrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app/jobs/welcome&lt;em&gt;email&lt;/em&gt;job.rb&lt;/h1&gt;
+&lt;p&gt;class WelcomeEmailJob &amp;#x3C; ActiveJob::Base
+queue_as :mailer&lt;/p&gt;
+&lt;p&gt;  def perform(user&lt;em&gt;id)
+user = User.find&lt;/em&gt;by(id: user&lt;em&gt;id)
+UserMailer.welcome&lt;/em&gt;email(user).deliver_now if user
+end
+end&lt;/p&gt;
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;이제 최종적으로 회원가입을 통해 사용자가 생성되었을 경우 환영메일을 전송&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}&lt;/p&gt;
+&lt;h1 id=&quot;appmodelsuserrb&quot;&gt;&lt;a href=&quot;#appmodelsuserrb&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app/models/user.rb&lt;/h1&gt;
+&lt;p&gt;class User &amp;#x3C; ActiveRecord::Base&lt;/p&gt;
+&lt;p&gt;  after&lt;em&gt;create :process&lt;/em&gt;after_create!&lt;/p&gt;
+&lt;p&gt;  private&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    enterprise &lt;span class=&quot;token operator&quot;&gt;/=&lt;/span&gt; mp_operating_quad&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    dsl_runtime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;wired_horizontal_jquery &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vramUs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;64389&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; aix &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; socialSector &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
-            quad&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        flaming &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        infotainment&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;horseThreadColumn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;copySnippet&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; day&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        num_network_cpa &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; firewireAluExbibyte &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; denial_virtual_logic &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; program&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ram_wddm&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;map&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reader &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ole_install&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;def process_after_create!
+  self.access_token = generate_access_token
+  if save!
+    # 환영메일 전송
+    WelcomeEmailJob.perform_later(self.id)
+  end
+end
+
+def generate_access_token
+  loop do
+    token = &amp;quot;#{self.id}:#{Devise.friendly_token}&amp;quot;
+    break token unless User.where(access_token: token).first
+  end
+end&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;in-nunc&quot;&gt;&lt;a href=&quot;#in-nunc&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In nunc&lt;/h2&gt;
-&lt;p&gt;Superinposita dira me Iove, lanigeris tendunt! Illis gladii, in pignusque dixit
-trisulcis latices. Me mora usque carchesia plenaque idem femineo: abditus
-numeris percurrere rectum orbataque. Lucibus nocuisse et nova attactu et secura,
-enim poterentur.&lt;/p&gt;
-&lt;p&gt;Infelix ait eadem. Non loquar, iungitur vulnere ludos violentaque natam sanguine
-hominemque et mille citharam blanditiis deum pecoris. Vibrabant et crimina
-iterum: et nisi victa quietis litore? Cera sistere publica &lt;strong&gt;infelix
-harundinibus&lt;/strong&gt; quam ad et, deos iacent, &lt;strong&gt;hunc tulit&lt;/strong&gt;, spicula, natantes!
-Melioribus imperat fugit &lt;em&gt;me natum&lt;/em&gt; quem sequitur nocturnae moras tantummodo et
-secus aethera umentes vidisse terrae sororum laboris, fraterno.&lt;/p&gt;
-&lt;h2 id=&quot;perpetiar-lacrimas-non-dare&quot;&gt;&lt;a href=&quot;#perpetiar-lacrimas-non-dare&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Perpetiar lacrimas Non dare&lt;/h2&gt;
-&lt;p&gt;Tibi ducit incursu nomina terrae, feratur satis Telethusa corpore Eurynome in
-semina adiecit! Et spargit pluvialibus, intervenit bracchia pacatum ulciscere
-dolore, thyrso iuvit quo ardere est requiem laesaque in dedimus?&lt;/p&gt;
-&lt;h2 id=&quot;est-in-sit-suos-fessa&quot;&gt;&lt;a href=&quot;#est-in-sit-suos-fessa&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Est in sit suos fessa&lt;/h2&gt;
-&lt;p&gt;Est illo Osiris aevo, et &lt;strong&gt;dextrae&lt;/strong&gt; quoque et, illa. Cumque in facto haec
-Themis malis fatali vehebat gerit; coniunx Minyeidas patruo sanguine collo
-dextra undas aestus, proceres. Falso ut relictas me ara illa &lt;em&gt;expulit&lt;/em&gt;
-praebentem tanto dubiis anguiferumque. Fata vidit &lt;a href=&quot;http://nare.io/amplexu&quot;&gt;suam caede
-mirere&lt;/a&gt; serpentibus tibi propositumque vestes capillis
-natalibus, fitque! Verba Siphnon, arcanaque vicina, Cycnum mox suos coniunx
-ebrius.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hsf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; artMetalMeme&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;yottabytePrimary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circuit&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        saas&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;backbone &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; netmaskUtf&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        engineNybble&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;crtSdram &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; link_icq&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token function&quot;&gt;whitelist_youtube_search&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;botnet_w_dma&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;raidBurn&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; wavelengthBalancing&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        dithering_printer_so&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;toggle_right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    modifierDaemonOpen &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;touchscreen_speed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;692730&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sound_lion_finder&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            nanometer_variable &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ldap&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; recursion_pop_zebibyte&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;popCrossplatformVdsl&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        thunderboltMnemonic &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;lte&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;648733&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        ddr_spoofing &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; metal_commercial &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; http&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        leafPowerBar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; spoolPower&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        file_itunes &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; dataLifo&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    binary &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;Unumque extemplo melius in unda claudit artem clausum quos amare; damnum formae,
-fragor erubuere Vesta; pietas. Guttura nova modo obstantis nitar et &lt;strong&gt;boves&lt;/strong&gt;;
-dixit paratibus tenera contiguas occupat &lt;strong&gt;seque casu&lt;/strong&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github와 Jekyll을 이용한 무료 블로그 만들기 - 1]]></title><description><![CDATA[ 이번 에피소드에서는  Github Pages 의 기능을 이용하여 간단한 블로그를 제작하는 방법을 알아보고자 한다. 많은 사람들이 블로그를 운영하기 위해서  Wordpress 를 사용하고 있고, Wordpress는 상당히 훌륭한 CMS…]]></description><link>https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-1</link><guid isPermaLink="false">https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-1</guid><category><![CDATA[blog]]></category><category><![CDATA[jekyll]]></category><category><![CDATA[github]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Fri, 29 Apr 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/jekyll_github.png&quot; alt=&quot;Jekyll and Github Pages&quot;&gt;&lt;/p&gt;
+&lt;p&gt;end&lt;/p&gt;
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;이메일을 비동기로 전송할 수 있는 방법은 위의 방법 외에도 더 좋은 방법들이 있을 수 있다.
+개인적인 코딩 취향에 따라 작성하면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2016년 5월 TIOBE 순위]]></title><description><![CDATA[원문 :  http://www.tiobe.com/tiobe_index 2016년 5월 TIOBE Index 헤드라인 : 루비가 과거 루비의 가장 높은 순위와 같아지다. 루비가 현재 TIOBE Index에서…]]></description><link>https://wecanooo.github.io/story/2016-년-5-월-tiobe-순위</link><guid isPermaLink="false">https://wecanooo.github.io/story/2016-년-5-월-tiobe-순위</guid><category><![CDATA[ruby]]></category><category><![CDATA[rank]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Thu, 12 May 2016 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/tiobe.png&quot; alt=&quot;TIOBE Index&quot;&gt;&lt;/p&gt;
+&lt;p&gt;원문 : &lt;a href=&quot;http://www.tiobe.com/tiobe_index&quot;&gt;http://www.tiobe.com/tiobe_index&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2016년-5월-tiobe-index&quot;&gt;&lt;a href=&quot;#2016%EB%85%84-5%EC%9B%94-tiobe-index&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2016년 5월 TIOBE Index&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;헤드라인 : 루비가 과거 루비의 가장 높은 순위와 같아지다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;루비가 현재 TIOBE Index에서 8위에 위치하였습니다. 이것은 루비가 과거 2008년 12월에 차지했었던 가장 높은 순위와 같습니다.
+루비의 이런 두번째 인기는 첫번째의 인기와는 다소 상반된 부분이 있습니다. 2006년 루비 전도사들은 루비가 가장 높은 순위가 될 것이라고 외치고 있었고 이는 별다른 의심의 여지가 없었습니다. 루비와 루비를 이용한 웹개발 환경인 레일즈는 성공적으로 영향력을 확대해 나가며 거의 세계를 정복해 나가고 있었습니다.
+루비는 빠듯한 일정을 소화해야 하는 스타트업 업체들에 사랑받는 언어가 되었고, &lt;strong&gt;&quot;2006년의 프로그래밍 언어&quot;&lt;/strong&gt; 로 선정되기도 하였으며 그 인기는 2008년 말까지도 이어졌습니다.&lt;/p&gt;
+&lt;p&gt;하지만 이때부터 많은 데이터를 처리해야 할 경우 성능이 떨어지는 것과 확정성이 문제로 대두되었고, 급기야 2010년 초에는 루비의 사용으로 유명하던 &lt;strong&gt;트위터&lt;/strong&gt; 가 이러한 문제로 인해 자바로 옮겨타기 시작했습니다. 루비 전도사들은 다른 쿨한 언어로 이동하면서 사라졌고 루비는 역사의 뒤안길로 사라지는 듯 했습니다.
+하지만 그렇지 않았죠. 세상의 이목이 벗어난 곳에서 조용히 몇년을 보낸 뒤 &lt;strong&gt;2015년 초반부터 루비의 인기는 다시 증가&lt;/strong&gt; 하기 시작했습니다.
+이제 루비는 예전처럼 그런 함성은 없지만 대신 실제로 사용되는 언어로써 지속적으로 성장할 수 있는 언어로 자리매김 한 것처럼 보입니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/tiobe_2016.png&quot; alt=&quot;TIOBE Index - 2016 May&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/tiobe_2016_graph.png&quot; alt=&quot;TIOBE Graph - 2016 May&quot;&gt;&lt;/p&gt;
+&lt;p&gt;해석에 문제가 있을 수 있으니 필요하면 원문을 직접 보시는 것을 추천합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github와 Jekyll을 이용한 무료 블로그 만들기 - 4]]></title><description><![CDATA[이번 에피소드에서는 custom domain을 Github Pages에 적용하여 username.github.io 형태의 URL을 yourdomain.com 형태로 변경하는 방법에 대해서 알아본다. 꼭 Custom Domain…]]></description><link>https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-4</link><guid isPermaLink="false">https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-4</guid><category><![CDATA[blog]]></category><category><![CDATA[jekyll]]></category><category><![CDATA[github]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Sun, 01 May 2016 10:18:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/custom-domain-to-github.jpg&quot; alt=&quot;Github Custom Domain&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이번 에피소드에서는 custom domain을 Github Pages에 적용하여 username.github.io 형태의 URL을 yourdomain.com 형태로 변경하는 방법에 대해서 알아본다.&lt;/p&gt;
+&lt;h3 id=&quot;꼭-custom-domain을-적용해야-하나&quot;&gt;&lt;a href=&quot;#%EA%BC%AD-custom-domain%EC%9D%84-%EC%A0%81%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;꼭 Custom Domain을 적용해야 하나?&lt;/h3&gt;
+&lt;p&gt;username.github.io 형태의 URL이 나쁜 것은 아니다. 하지만 나만의 URL을 적용함으로써 내가 제공하고자 하는 제품이나 서비스의 성격을 더욱 명확히 할 수 있고 SEO 측면에서도 상당히 중요하게 적용될 수 있다.&lt;/p&gt;
+&lt;p&gt;요즘은 도메인을 구매하는데 큰 비용이 들어가는 것도 아니고, 프로모션도 이따금씩 하니 나만의 도메인을 하나쯤 갖는 것도 좋을 것이다.&lt;/p&gt;
+&lt;h3 id=&quot;custom-domain-적용하기&quot;&gt;&lt;a href=&quot;#custom-domain-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Custom Domain 적용하기&lt;/h3&gt;
+&lt;p&gt;도메인을 구매했다면 Custom Domain을 적용하는 것은 아래의 순서로 아주 간단하게 적용할 수 있다.
+도메인 설정에 있어 필요한 DNS Record 관리는 도메인을 어디에서 구매했으냐에 따라 다소 화면이 다를 수 있다. 이 에피소드에서는 &lt;a href=&quot;https://kr.godaddy.com/&quot;&gt;Godaddy&lt;/a&gt; 기준으로 설명한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://wecanooo.github.io/blog/github-pages/&quot;&gt;이전 에피소드&lt;/a&gt;에서 만든 Github 저장소를 방문한 뒤 &lt;strong&gt;New File&lt;/strong&gt; 을 클릭하여 &lt;strong&gt;CNAME&lt;/strong&gt; 이라는 이름의 파일을 만든다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CNAME&lt;/strong&gt; 파일의 내용에 구매한 도메인을 입력한다. 예를들어, &lt;strong&gt;yourdomain.com&lt;/strong&gt; 형태로 입력한다.&lt;/li&gt;
+&lt;li&gt;만약 &lt;strong&gt;subdomain&lt;/strong&gt; 을 적용하고 싶다면 &lt;strong&gt;subdomain.yourdomain.com&lt;/strong&gt; 형태로 입력을 한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CNAME&lt;/strong&gt; 파일을 제대로 생성했다면, 이제 도메인 관리를 위해 도메인을 구매한 사이트로 이동하여 DNS Record 설정을 한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNS 관리&lt;/strong&gt; 항목에서 새로운 Record를 추가한다.&lt;/li&gt;
+&lt;li&gt;Record의 유형은 &apos;A&apos;, 호스트는 &apos;@&apos;, 지시방향은 &apos;192.30.252.153&apos;로 지정하여 Record를 생성한다. (만약, &lt;strong&gt;subdomain&lt;/strong&gt; 을 적용하고자 한다면 호스트 입력란에 &lt;strong&gt;subdomain&lt;/strong&gt; 명을 입력한다.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/cname.png&quot; alt=&quot;CNAME 파일 생성&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/dns_management.png&quot; alt=&quot;DNS 관리&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/add_record.png&quot; alt=&quot;레코드 추가&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위와 같이 도메인 관리 화면에서 새로운 Record를 추가하면 Custom Domain을 적용하기 위한 작업은 모두 끝났다.
+DNS의 변경이기 때문에 바로 적용될 수도 있고, 때에 따라서는 변경까지 시간이 걸릴 수도 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github와 Jekyll을 이용한 무료 블로그 만들기 - 3]]></title><description><![CDATA[이전 에피소드 에서 우리는 Github Page Generator를 이용하여  UserName .github.io…]]></description><link>https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-3</link><guid isPermaLink="false">https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-3</guid><category><![CDATA[blog]]></category><category><![CDATA[jekyll]]></category><category><![CDATA[github]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Sat, 30 Apr 2016 10:18:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/jekyll_github.png&quot; alt=&quot;Jekyll and Github Pages&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://wecanooo.github.io/blog/github-pages/&quot;&gt;이전 에피소드&lt;/a&gt;에서 우리는 Github Page Generator를 이용하여 &lt;strong&gt;[UserName].github.io&lt;/strong&gt; 라는 이름의 사이트를 갖게 되었다.
+그런데, 이렇게 만들어진 사이트는 기본 정보만 가지고 있는 소개 페이지 정도여서 블로그로 사용하기에는 적합하지 않다. 따라서, 우리는 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt;를 이용하여 이미 만들어진 사이트를 블로그처럼 만들 필요가 있다.&lt;/p&gt;
+&lt;h3 id=&quot;git-clone을-통해-소스-내려받기&quot;&gt;&lt;a href=&quot;#git-clone%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%86%8C%EC%8A%A4-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git Clone을 통해 소스 내려받기&lt;/h3&gt;
+&lt;p&gt;Jekyll Theme를 다운로드 받기 전에 &lt;code class=&quot;language-text&quot;&gt;git clone&lt;/code&gt; 명령을 통해 이전 에피소드에서 만들었던 저장소를 로컬 컴퓨터로 내려 받도록 하겠다. 저장소의 경로는 각자의 경로가 모두 다르기 때문에 본인의 저장소 경로를 확인하여야 한다.&lt;/p&gt;
+&lt;p&gt;{% highlight shell %}
+$ git clone &lt;a href=&quot;https://github.com/haassl/haassl.github.io.git&quot;&gt;https://github.com/haassl/haassl.github.io.git&lt;/a&gt;
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;위의 명령을 수행하면 &lt;code class=&quot;language-text&quot;&gt;haassl.github.io&lt;/code&gt; 폴더가 생성이 된다. 해당 폴더 내에는 이전 에피소드에서 생성되었던 파일들이 존재하는 것을 확인할 수 있다. 이제 이 폴더에 Jekyll Theme 파일을 적용하기 위해 &lt;code class=&quot;language-text&quot;&gt;haassl.github.io&lt;/code&gt; 폴더 내의 모든 파일은 삭제하도록 한다.&lt;/p&gt;
+&lt;h3 id=&quot;jekyll-theme-다운로드-받기&quot;&gt;&lt;a href=&quot;#jekyll-theme-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B0%9B%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jekyll Theme 다운로드 받기&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 사이트로 이동하면 많은 Theme 가 존재한다. 지금 글이 작성되고 있는 이 블로그도 Github Page와 Jekyll Theme를 이용한 블로그인데 편의상 같은 Theme를 다운로드 받아서 만들어 보겠다.&lt;/p&gt;
+&lt;p&gt;Jekyll Theme 중 &lt;a href=&quot;http://jekyllthemes.org/themes/moon/&quot;&gt;Moon Theme&lt;/a&gt; 를 선택하고 Download 버튼을 클릭하여 Moon-gh-pages.zip 파일을 다운로드 받은 뒤 압축을 풀어 &lt;code class=&quot;language-text&quot;&gt;Moon-gh-pages&lt;/code&gt; 폴더 내에 있는 모든 파일을 위에서 생성한 &lt;code class=&quot;language-text&quot;&gt;haassl.github.io&lt;/code&gt; 내로 복사한다.&lt;/p&gt;
+&lt;h3 id=&quot;jekyll-설치하기&quot;&gt;&lt;a href=&quot;#jekyll-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jekyll 설치하기&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb-ko.github.io/&quot;&gt;Jekyll&lt;/a&gt;은 정적파일을 블로그나 웹사이트로 제작할 수 있도록 하는 강력한 도구이다.
+Jekyll에 대한 안내는 사이트에서 자세하게 안내하고 있으니 참고하기 바란다. Mac 에서 Jekyll 설치는 아주 간단하게 설치가 가능하다.&lt;/p&gt;
+&lt;p&gt;{% highlight shell %}
+$ gem install jekyll
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;Jekyll을 설치한 뒤 화면을 확인하기 위해서는 작업경로로 이동한 뒤 아래의 명령을 수행하면 된다.&lt;/p&gt;
+&lt;p&gt;{% highlight shell %}
+$ jekyll serve -w
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;이제 &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt; 에서 화면을 확인할 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;jekyll-theme-서버에-적용하기&quot;&gt;&lt;a href=&quot;#jekyll-theme-%EC%84%9C%EB%B2%84%EC%97%90-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jekyll Theme 서버에 적용하기&lt;/h3&gt;
+&lt;p&gt;{% highlight shell %}
+$ git add --all
+$ git commit -m &quot;Initial Commit&quot;
+$ git push origin master
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;Github의 계정을 물어보면 계정정보를 입력하여 서버로 Theme를 올린다.&lt;/p&gt;
+&lt;p&gt;이제 &lt;strong&gt;[UserName].github.io&lt;/strong&gt; 를 방문해 보면 변경된 Theme가 적용된 것을 확인할 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;안내영상&quot;&gt;&lt;a href=&quot;#%EC%95%88%EB%82%B4%EC%98%81%EC%83%81&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;안내영상&lt;/h3&gt;
+&lt;div&gt;
+          &lt;div
+            class=&quot;gatsby-resp-iframe-wrapper&quot;
+            style=&quot;padding-bottom: 75%; position: relative; height: 0; overflow: hidden;&quot;
+          &gt;
+            &lt;iframe src=&quot;//www.youtube.com/embed/H5h4s7b6XcU&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          &quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Github와 Jekyll을 이용한 무료 블로그 만들기 - 2]]></title><description><![CDATA[Github Pages를 이용하는 방법에는 크게 두가지가 있다. Github 계정 페이지 Github 프로젝트 페이지 Github 계정 페이지의 경우 Github에서 Repository를 생성할 때  AccountName .github.io…]]></description><link>https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-2</link><guid isPermaLink="false">https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-2</guid><category><![CDATA[blog]]></category><category><![CDATA[jekyll]]></category><category><![CDATA[github]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Fri, 29 Apr 2016 10:18:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/github-pages.jpg&quot; alt=&quot;Github Pages&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Github Pages를 이용하는 방법에는 크게 두가지가 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Github 계정 페이지&lt;/li&gt;
+&lt;li&gt;Github 프로젝트 페이지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Github 계정 페이지의 경우 Github에서 Repository를 생성할 때 &lt;strong&gt;[AccountName]&lt;/strong&gt;.github.io 형태로 만들면 된다. &lt;strong&gt;[AccountName]&lt;/strong&gt; 에는 반드시 자신의 계정명을 입력해야 하니 유의하기 바란다.&lt;/p&gt;
+&lt;p&gt;Github 프로젝트 페이지의 경우 보통의 Repository를 만드는 것과 마찬가지로, 원하는 이름의 Repository를 생성한 뒤 생성된 저장소에 &lt;strong&gt;gh-pages&lt;/strong&gt; 라는 이름의 Branch를 만들면 Github에서 이 것을 Github Pages로 인식한다. 이후 &lt;strong&gt;gh-pages&lt;/strong&gt; Branch에 코드들을 넣으면 자신이 원하는 페이지를 제작할 수 있다.&lt;/p&gt;
+&lt;p&gt;이번 에피소드에서는 Github 계정 페이지 제작 방식으로 진행한다. 자세한 내용을 알고 싶으면 &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;를 참조하길 바란다.&lt;/p&gt;
+&lt;h3 id=&quot;github-저장소-생성하기&quot;&gt;&lt;a href=&quot;#github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Github 저장소 생성하기&lt;/h3&gt;
+&lt;p&gt;Github 계정이 있고 로그인이 완료된 상태라면 &lt;a href=&quot;https://github.com/new&quot;&gt;New Repository&lt;/a&gt;를 클릭하여
+저장소 생성화면으로 이동한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/user-repo@2x.png&quot; alt=&quot;Create New User Repository&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Repository Name은 위에서 말한 것처럼 반드시 자신의 &lt;strong&gt;[AccountName]&lt;/strong&gt;.github.io 형태로 입력을 해야 한다. 그렇지 않을 경우, 정상적으로 동작하지 않을 수 있으니 유의하기 바란다.&lt;/p&gt;
+&lt;p&gt;Github는 정책적으로 Private Repository를 유료로 지정하고 있기 때문에 우리는 Public Repository로 생성하도록 한다. 아래의 &quot;Initialize this repository with a README&quot;은 Repository를 생성할 때 README 파일을 함께 생성할 것인지를 물어보는 것으로 체크를 하면 최초에 README 파일을 함께 생성해 준다. 체크를 하고 가도록 하겠다. &lt;strong&gt;Create Repository&lt;/strong&gt; 버튼을 클릭하면 다음 화면으로 진행할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/created_repository.png&quot; alt=&quot;Repository Settings&quot;&gt;&lt;/p&gt;
+&lt;p&gt;저장소가 정상적으로 생성이 되었다면 Github Pages로 만들기 위해 상단 Tab 중 &lt;strong&gt;[Settings]&lt;/strong&gt; 탭을 눌러 Settings 화면으로 이동한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/auto_generator.png&quot; alt=&quot;Auto Generator&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Settings 화면에서 마우스를 아래로 좀 내려보면 &lt;strong&gt;[Github Pages]&lt;/strong&gt; 항목이 보이고 &lt;strong&gt;[Launch automatic page generator]&lt;/strong&gt; 버튼이 보이면 클릭해 준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/continue.png&quot; alt=&quot;Continue&quot;&gt;&lt;/p&gt;
+&lt;p&gt;최종화면에서 Page Name과 Tagline에 적당한 값을 입력한 뒤 &lt;strong&gt;[Continue to layouts]&lt;/strong&gt; 버튼을 클릭하고 Layout은 기본 Layout을 선택한 뒤 완료한다.
+Layout을 기본 Layout으로 선택하는 이유는 다음 에피소드에서 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;를 이용하여 외부 Theme를 적용할 것이 때문이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/done.png&quot; alt=&quot;Continue&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;안내영상&quot;&gt;&lt;a href=&quot;#%EC%95%88%EB%82%B4%EC%98%81%EC%83%81&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;안내영상&lt;/h3&gt;
+&lt;div&gt;
+          &lt;div
+            class=&quot;gatsby-resp-iframe-wrapper&quot;
+            style=&quot;padding-bottom: 75%; position: relative; height: 0; overflow: hidden;&quot;
+          &gt;
+            &lt;iframe src=&quot;//www.youtube.com/embed/eVc3S5wk18o&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          &quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;여기까지 완료한 뒤 &lt;strong&gt;[AccountName]&lt;/strong&gt;.github.io 을 입력하면 Github 저장소에 호스팅 되는 자신의 페이지를 확인할 수 있다. 다음 에피소드에서 Jekyll Theme 중 적당한 것을 하나 선택하여 블로그를 꾸며보도록 하겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github와 Jekyll을 이용한 무료 블로그 만들기 - 1]]></title><description><![CDATA[ 이번 에피소드에서는  Github Pages 의 기능을 이용하여 간단한 블로그를 제작하는 방법을 알아보고자 한다. 많은 사람들이 블로그를 운영하기 위해서  Wordpress 를 사용하고 있고, Wordpress는 상당히 훌륭한 CMS…]]></description><link>https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-1</link><guid isPermaLink="false">https://wecanooo.github.io/story/github와-jekyll을-이용한-무료-블로그-만들기-1</guid><category><![CDATA[blog]]></category><category><![CDATA[jekyll]]></category><category><![CDATA[github]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Fri, 29 Apr 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://wecanooo.github.io/blog/assets/images/jekyll_github.png&quot; alt=&quot;Jekyll and Github Pages&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt; 이번 에피소드에서는 &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;의 기능을 이용하여 간단한 블로그를 제작하는 방법을 알아보고자 한다. 많은 사람들이 블로그를 운영하기 위해서 &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;를 사용하고 있고, Wordpress는 상당히 훌륭한 CMS 툴임에는 분명하다. 이 글은 Wordpress가 나쁘고 Github Pages를 좋다고 얘기하고자 하는 것은 아님을 밝혀둔다.&lt;/p&gt;
 &lt;p&gt; Wordpress는 상당히 강력한 기능들과 더불어 많은 Plugin이 존재하여 많은 사람들이 사용하고 있지만 &lt;a href=&quot;https://wordpress.org/hosting/&quot;&gt;Hosting 방식으로 Wordpress를 운영&lt;/a&gt;할 것이 아니라면 모듈을 다운로드 받아 설치하는 방식으로 진행된다.&lt;/p&gt;
