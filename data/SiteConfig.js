@@ -4,7 +4,7 @@ module.exports = {
   blogAuthorId: "wecanooo", // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: "The way to find a dream", // Site title.
   siteTitleAlt: "STUnitas 개발자의 블로그", // Alternative site title for SEO.
-  siteLogo: "/logos/dream.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+  siteLogo: "logos/dream.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://wecanooo.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/story", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'dreams.each { |dream| puts "a #{dream} is in my heart" }', // Website description used for RSS feeds/meta description tag.
