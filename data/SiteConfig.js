@@ -8,7 +8,7 @@ module.exports = {
   siteUrl: "https://wecanooo.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/story", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'dreams.each { |dream| puts "a #{dream} is in my heart" }', // Website description used for RSS feeds/meta description tag.
-  siteCover: "/images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  siteCover: "images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: false, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "wecanooo", // The author name used in the RSS file
