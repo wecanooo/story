@@ -2,12 +2,12 @@ module.exports = {
   blogPostDir: "sample-posts", // The name of directory that contains your posts.
   blogAuthorDir: "sample-authors", // The name of directory that contains your 'authors' folder.
   blogAuthorId: "wecanooo", // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "The way to find a dream", // Site title.
+  siteTitle: "기억하기 귀찮은 잡다한 기술이야기", // Site title.
   siteTitleAlt: "STUnitas 개발자의 블로그", // Alternative site title for SEO.
   siteLogo: "logos/dream.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://wecanooo.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/story", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
-  siteDescription: 'dreams.each { |dream| puts "a #{dream} is in my heart" }', // Website description used for RSS feeds/meta description tag.
+  siteDescription: "기억하자니 쓸데없이 귀찮고, 기억 안하자니 모르면 상당히 귀찮은 것들을 기록합니다.", // Website description used for RSS feeds/meta description tag.
   siteCover: "images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: false, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
