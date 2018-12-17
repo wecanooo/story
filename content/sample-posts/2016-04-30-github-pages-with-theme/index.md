@@ -3,6 +3,7 @@ title: Github와 Jekyll을 이용한 무료 블로그 만들기 - 3
 cover: 'images/cover1.jpg'
 author: "wecanooo"
 date:   2016-04-30 10:18:00
+category: "tech"
 tags:
   - blog
   - jekyll

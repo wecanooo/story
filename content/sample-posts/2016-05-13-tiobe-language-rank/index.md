@@ -3,6 +3,7 @@ title: 2016년 5월 TIOBE 순위
 cover: 'images/cover6.jpg'
 author: "wecanooo"
 date:   2016-05-12 08:00:00
+category: "tech"
 tags:
   - ruby
   - rank
