@@ -1,10 +1,10 @@
 ---
 title: Jekyll 에서 Gatsby 로 블로그 이사하기
-cover: 'images/cover4.jpg'
+cover: 'https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/cover7.jpg'
 author: "wecanooo"
 date:   2018-12-17 23:57:00
 category: "tech"
-logo: '/logos/dream.png'
+logo: 'https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/dream.png'
 tags:
   - jekyll
   - react
@@ -51,7 +51,7 @@ gatsby develop
 
 실행 후에는 https://localhost:8000 을 통해 로컬에서 실행되는 blog 를 확인하실 수 있습니다.
 
-![gatsby develop](https://wecanooo.github.com/story/images/gatsby_develop.png)
+![gatsby develop](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/gatsby_develop.png)
 
 여기까지 진행하면 기본적인 blog 만들기 준비는 끝이 났습니다. 이제부터 할 일은 data 폴더 내의 SiteConfig.js 파일을 본인의 취향에 맞게끔 수정해 나가면 됩니다. 자세한 설정은 [Ghost 테마 스타터](https://github.com/haysclark/gatsby-starter-casper) 의 SiteConfig 설정을 참고하면 쉽게 변경하실 수 있습니다.
 

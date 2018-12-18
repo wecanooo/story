@@ -1,10 +1,10 @@
 ---
 title: 2016년 5월 TIOBE 순위
-cover: 'images/cover6.jpg'
+cover: 'https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/cover6.jpg'
 author: "wecanooo"
 date:   2016-05-12 08:00:00
 category: "tech"
-logo: '/logos/dream.png'
+logo: 'https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/dream.png'
 tags:
   - ruby
   - rank

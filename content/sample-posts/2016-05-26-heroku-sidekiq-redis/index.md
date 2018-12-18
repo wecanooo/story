@@ -1,10 +1,10 @@
 ---
 title: Heroku 환경에서 Sidekiq, Redis 이용하기
-cover: 'images/cover6.jpg'
+cover: 'https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/cover6.jpg'
 author: "wecanooo"
 date:   2016-05-26 20:12:00
 category: "tech"
-logo: '/logos/dream.png'
+logo: 'https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/87836b5eb053590be9fc6d495e7858fc/dream.png'
 tags:
   - sidekiq
   - redis
