@@ -1,4 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[기억하기 귀찮은 잡다한 기술이야기]]></title><description><![CDATA[기억하자니 쓸데없이 귀찮고, 기억 안하자니 모르면 상당히 귀찮은 것들을 기록합니다.]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>기억하기 귀찮은 잡다한 기술이야기</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Tue, 18 Dec 2018 11:47:51 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2018]]></copyright><item><title><![CDATA[Jekyll 에서 Gatsby 로 블로그 이사하기]]></title><description><![CDATA[기존  제 블로그 는 Jekyll 기반으로 만들어 Github 로 배포를 했습니다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[기억하기 귀찮은 잡다한 기술이야기]]></title><description><![CDATA[기억하자니 쓸데없이 귀찮고, 기억 안하자니 모르면 상당히 귀찮은 것들을 기록합니다.]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>기억하기 귀찮은 잡다한 기술이야기</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Wed, 19 Dec 2018 14:36:26 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2018]]></copyright><item><title><![CDATA[API 개발에서 Postman 이용하기]]></title><description><![CDATA[Rails API 를 만들어 가면서의 고민 회사에서 Rails API 를 이용하여 Backend API Server 를 제작하고 있습니다. API 를 제작하는데 있어서 필수적으로 제공되어야 할 것은 일관성 있는 API 설계와 더불어 표준적인 API…]]></description><link>https://wecanooo.github.io/story/api-개발에서-postman-이용하기</link><guid isPermaLink="false">https://wecanooo.github.io/story/api-개발에서-postman-이용하기</guid><category><![CDATA[api]]></category><category><![CDATA[rails]]></category><category><![CDATA[postman]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Wed, 19 Dec 2018 20:37:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/b5a3f174d257be33bbbc1e6e7f787f6a/api.webp&quot; alt=&quot;Rails API&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;rails-api-를-만들어-가면서의-고민&quot;&gt;&lt;a href=&quot;#rails-api-%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4-%EA%B0%80%EB%A9%B4%EC%84%9C%EC%9D%98-%EA%B3%A0%EB%AF%BC&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rails API 를 만들어 가면서의 고민&lt;/h3&gt;
+&lt;p&gt;회사에서 Rails API 를 이용하여 Backend API Server 를 제작하고 있습니다. API 를 제작하는데 있어서 필수적으로 제공되어야 할 것은 일관성 있는 API 설계와 더불어 표준적인 API Spec 을 따라 클라이언트와 데이터를 교환하는 것일 겁니다.&lt;/p&gt;
+&lt;p&gt;하지만, API Server 를 제작하는 곳에서는 위의 내용에 더해 API 버전을 지속적으로 관리하는 것과 지속적으로 발전해 나가는 API Endpoint 가 정상적으로 잘 동작하는지에 대한 점검방법 또한 많은 고민을 하게 만드는 요소가 됩니다.&lt;/p&gt;
+&lt;p&gt;Rails Framework 를 사용하면서 그 사용의 편리성에 대체적으로 만족하고 사용하고 있습니다만, &lt;a href=&quot;https://swagger.io/&quot;&gt;Swagger&lt;/a&gt; 를 이용한 API 문서화 방법은 다른 개발 프레임워크들에 비해 의외로 편리하게 되어 있지 않습니다. 또한, Swagger 로 제작된 API Endpoint 는 지속적인 개발 기간동안 정상적으로 동작하는지에 대한 검증을 진행하기가 쉽지 않은 문제점이 있었습니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;편리한 방법으로 API Endpoint 검증과 함께 API 문서화를 한번에 이뤄낼 수 있는 방법은 없을까?&lt;/li&gt;
+&lt;li&gt;테스트 도구와 문서화 도구를 분리하지 않을 수 있는 방법은 없을까?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;api-테스트-도구&quot;&gt;&lt;a href=&quot;#api-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8F%84%EA%B5%AC&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API 테스트 도구&lt;/h3&gt;
+&lt;p&gt;위 문제를 고민하던 중 일반적으로 제작된 API 를 테스트를 하기 위해서 어떤 방법을 사용하고 있는지 나열해 보았습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Command Line 에서 curl 을 이용하는 방법&lt;/li&gt;
+&lt;li&gt;IntelliJ 나 VSCode 와 같은 통합 IDE 에서 제공하는 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=humao.rest-client&quot;&gt;REST API Client&lt;/a&gt; 도구를 이용하는 방법&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.getpostman.com/&quot;&gt;Postman&lt;/a&gt; 과 같은 Gui 도구를 이용하는 방법&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;curl 을 사용하는 방법은 비교적 Command Line 에 익숙한 사용자들에게는 편리한 방법일지는 몰라도 히스토리 관리라던지 작성된 코드의 재활용이 쉽지 않다는 불편함이 있습니다.&lt;/p&gt;
+&lt;p&gt;최근까지는 IDE 에서 제공되는 REST API Client 도구를 이용하여 API 테스트를 진행해 왔었습니다. 개발을 진행하면서 내부 테스트 용도로는 상당히 편리함을 느꼈지만, 문서화 문제를 해결하진 못했고 프론트엔드 개발자와의 협업에도 크게 도움이 되진 못했습니다.&lt;/p&gt;
+&lt;p&gt;개인적으로 간간히 사용하던 &lt;a href=&quot;https://www.getpostman.com/&quot;&gt;Postman&lt;/a&gt; 을 최근에 다시 사용해 보면서 Postman 의 강력함에 놀라고 있는 중입니다. 예전부터 Postman 을 사용하면서 좋았던 것은 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/creating_collections/&quot;&gt;Collection&lt;/a&gt; 기능과 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/sharing_collections/&quot;&gt;Collection Share&lt;/a&gt; 기능을 통해 만들었던 코드를 재활용할 수 있다는 것에서 상당히 만족하고 있었습니다.
+이번에 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/scripts/test_scripts/&quot;&gt;Test Script&lt;/a&gt; 기능까지 알게되면서 Postman 이라는 도구를 다시 한번 살펴보게 되었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/postman_test_script.png&quot; alt=&quot;Postman Test Script&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;postman&quot;&gt;&lt;a href=&quot;#postman&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Postman&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.getpostman.com/&quot;&gt;Postman&lt;/a&gt; 은 Chrome Extendsion 과 Desktop 설치형 App 으로 제공되는 RestAPI Client 입니다. 그 기능이 상당히 강력하고 아래와 같이 Command Line 을 이용한 Restful API 호출에 익숙하지 않은 사용자들에게는 정말 편리한 도구입니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;curl -i -X POST -H &amp;quot;Content-Type:application/json&amp;quot; http://localhost:3000/api/v1/channels -d &amp;#39;{&amp;quot;title&amp;quot;:&amp;quot;- The Naked Scientists Podcast - Stripping Down Science-new-title2&amp;quot;,&amp;quot;linkOnPodcastpedia&amp;quot;:&amp;quot;https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science&amp;quot;,&amp;quot;description&amp;quot;:&amp;quot;The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.&amp;quot;}&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Postman 이 편리한 이유는 비단 잘 구성된 GUI 도구라는 것에만 그치지 않습니다. &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/creating_collections/&quot;&gt;Collection&lt;/a&gt; 기능을 통해 한 단위의 기능 또는 프로젝트 별로 API 들을 Group 화 할 수 있으며, &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/sharing_collections/&quot;&gt;Collection Share&lt;/a&gt; 기능으로 다른 사용자 또는 다른 PC 로 저장된 Collection 을 쉽게 옮길 수도 있습니다.&lt;/p&gt;
+&lt;p&gt;또한, &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman/&quot;&gt;Newman&lt;/a&gt; 이라는 Cli 를 통해 저장된 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/creating_collections/&quot;&gt;Collection&lt;/a&gt; 을 Command Line Runner 로 실행해 볼 수도 있는 강력한 기능을 제공하고 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/newman.gif&quot; alt=&quot;Postman Newman Cli&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이 문서에서 다루고 싶은 주제는 &lt;a href=&quot;https://guides.rubyonrails.org/api_app.html&quot;&gt;Rails API&lt;/a&gt; + &lt;a href=&quot;https://about.gitlab.com/product/continuous-integration/&quot;&gt;Gitlab CI&lt;/a&gt; + &lt;a href=&quot;http://rspec.info/&quot;&gt;RSpec&lt;/a&gt; + &lt;a href=&quot;https://github.com/presidentbeef/brakeman&quot;&gt;Brakeman&lt;/a&gt; + &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman/&quot;&gt;Newman&lt;/a&gt; + &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/creating_collections/&quot;&gt;Postman Collection&lt;/a&gt; 의 조합을 통해 &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;빌드 자동화&lt;/li&gt;
+&lt;li&gt;테스트 검증&lt;/li&gt;
+&lt;li&gt;API Endpoint 검증&lt;/li&gt;
+&lt;li&gt;보안 취약점 검증&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;을 진행해 보고자 합니다. 또한, 이 문서의 마지막에서는 Postman 에서 제공하고 있는 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/api_documentation/intro_to_api_documentation/&quot;&gt;Postman API Documentation&lt;/a&gt; 기능을 통해 그동안 귀찮게 느껴졌었던 API Documentation 을 함께 해결하고자 합니다.&lt;/p&gt;
+&lt;h3 id=&quot;이-문서에서-다루지-않는-것들&quot;&gt;&lt;a href=&quot;#%EC%9D%B4-%EB%AC%B8%EC%84%9C%EC%97%90%EC%84%9C-%EB%8B%A4%EB%A3%A8%EC%A7%80-%EC%95%8A%EB%8A%94-%EA%B2%83%EB%93%A4&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이 문서에서 다루지 않는 것들&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rails API 프로젝트 생성 방법&lt;/li&gt;
+&lt;li&gt;API 코드 작성 방법&lt;/li&gt;
+&lt;li&gt;Rspec 코드 작성 방법&lt;/li&gt;
+&lt;li&gt;Gitlab CI 설치방법 및 기본개념&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여기서는 여러분이 Rails 라는 개발도구에 이미 익숙하고, Rspec 을 통해 테스트 코드를 작성할 수 있는 상태라고 가정합니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;postman-으로-테스트-코드-작성&quot;&gt;&lt;a href=&quot;#postman-%EC%9C%BC%EB%A1%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Postman 으로 테스트 코드 작성&lt;/h3&gt;
+&lt;p&gt;앞서 얘기한 Postman 도구를 통해 테스트 코드를 작성해 보겠습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/api.png&quot; alt=&quot;Postman API&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/postman.png&quot; alt=&quot;Postman Test Script&quot;&gt;&lt;/p&gt;
+&lt;p&gt;그림에서 표시한 것처럼 API 작성과 Tests 스크립트를 차례로 작성합니다. 아래 Test Script 에 대한 샘플 코드입니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 1. 요청 이후 status code 체크
+
+pm.test(&amp;#39;Check status code === 200&amp;#39;, () =&amp;gt; pm.response.to.have.status(200));
+
+// 2. 요청 이후 api_token 존재여부 체크
+
+pm.test(&amp;#39;Check api_token&amp;#39;, () =&amp;gt; {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.api_token !== null).to.be.true;
+});&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;이후 &lt;code class=&quot;language-text&quot;&gt;send&lt;/code&gt; 버튼을 눌러 API 실행을 눌러보면 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/result.png&quot; alt=&quot;Postman Result&quot;&gt;&lt;/p&gt;
+&lt;p&gt;그림과 같이 호출결과와 테스트 결과를 확인할 수 있습니다.&lt;/p&gt;
+&lt;h3 id=&quot;postman-collection-생성&quot;&gt;&lt;a href=&quot;#postman-collection-%EC%83%9D%EC%84%B1&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Postman Collection 생성&lt;/h3&gt;
+&lt;p&gt;이제 위에서 진행한 방식의 API 호출 및 테스트 코드작성을 Collection 으로 만들어 보겠습니다.
+&lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/creating_collections/&quot;&gt;Postman Collection 만들기&lt;/a&gt; 에서 자세한 내용을 보실 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/collection.png&quot; alt=&quot;Postman Collection&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 생성된 Collection 을 한번에 실행해 보기 위해서는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Postman 의 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collection_runs/starting_a_collection_run/&quot;&gt;Collection Runner&lt;/a&gt; 를 통해 UI 로 실행&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://learning.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman/&quot;&gt;Newman&lt;/a&gt; 을 통해 Command Line 에서 실행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;두 가지 방식이 있습니다. Newman 을 이용한 방식은 나중에 Gitlab CI 와 연동해서 사용할 것이기 때문에 지금은 Collection Runner 를 통해 실행하는 방식을 간단히 알아보겠습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/run.png&quot; alt=&quot;Collection Runner&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위의 그림처럼 Collection 에서 Run 을 누르게 되면 아래와 같은 새로운 창이 뜨게 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/run_collection.png&quot; alt=&quot;Run&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/run_result.png&quot; alt=&quot;Result&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위와 같은 방식으로 Postman 에서 작성된 Test Script 를 검증해 볼 수 있습니다.&lt;/p&gt;
+&lt;p&gt;다음으로 넘어가기 전에 Newman Cli 를 통해 Collection 에 등록된 테스트 코드를 실행하기 위해서는 다음 이미지와 같이 Collection 을 JSON 파일로 Export 시킬 필요가 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/export.png&quot; alt=&quot;export&quot;&gt;&lt;/p&gt;
+&lt;p&gt;예를 들어, Collection 을 &lt;code class=&quot;language-text&quot;&gt;postman_collection.json&lt;/code&gt; 이라는 파일명으로 export 했다면 Newman 으로는 다음과 같이 Collection 테스트를 수행해볼 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;newman run ./broker.postman_collection.json&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;gitlab-ci--소스-통합-및-동화를-위한-파이프라인&quot;&gt;&lt;a href=&quot;#gitlab-ci--%EC%86%8C%EC%8A%A4-%ED%86%B5%ED%95%A9-%EB%B0%8F-%EB%8F%99%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%1C&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gitlab CI : 소스 통합 및 동화를 위한 파이프라인&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/c7532b5bf0b64d61b0652f18ad3b7e23/ci-cd-test-deploy-illustration_2x.png&quot; alt=&quot;Gitlab CI&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Gitlab 은 Github 와 마찬가지로 소스코드 형상관리를 위한 도구입니다. Gitlab 에 대한 자세한 설명은 여기에서는 생략하도록 하겠습니다. 우리가 알아볼 것은 Gitlab CI 입니다.
+Gitlab CI 는 소스 통합 및 배포 자동화를 위한 도구로 일반적으로 많이 알려져 있는 &lt;a href=&quot;https://jenkins.io/&quot;&gt;Jenkins&lt;/a&gt; 또는 &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt; 와 유사한 도구라고 보시면 됩니다.&lt;/p&gt;
+&lt;p&gt;Gitlab CI 를 자세하게 알고 싶다면 &lt;a href=&quot;https://docs.gitlab.com/ee/ci/quick_start/&quot;&gt;Quick Start Gitlab CI&lt;/a&gt; 를 참고하세요. 여기에서는 Gitlab CI 에 대해서 자세한 내용을 다루진 않습니다. 여러분이 Gitlab CI 에 어느정도 익숙하다고 가정하겠습니다.&lt;/p&gt;
+&lt;p&gt;이제 우리는 위에서 말한대로 Gitlab CI 를 통해 테스트 수행 + API 테스트 + 보안 취약점 검증을 진행할 것입니다.
+먼저, .gitlab-ci.yml 파일을 아래와 같이 만들고 프로젝트 루트 디렉토리에 위치시킵니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;image: &amp;quot;ruby:2.4&amp;quot;
+
+services:
+  - mysql:5.7
+  - redis:alpine
+
+variables:
+  MYSQL_ALLOW_EMPTY_PASSWORD: &amp;quot;1&amp;quot;
+  RAILS_ENV: &amp;quot;test&amp;quot;
+  NODE_ENV: &amp;quot;test&amp;quot;
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - ruby -v
+  - which ruby
+  - apt-get update -y
+  - apt-get install -y libssl-dev build-essential wget
+  - npm -v
+  - npm install
+  - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+  - source /root/.bashrc
+  - nvm install 6.6.0
+  - nvm use 6.6.0
+  - node -v
+  - npm install newman -g
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install --quiet
+  - bundle exec rake db:create --quiet
+  - bundle exec rake db:migrate --quiet
+  - bundle exec rake db:test:prepare --quiet
+
+api:
+  script:
+    # 백그라운드로 레일즈 서버 실행
+    - bundle exec rails s -d
+    - newman run ./broker.postman_collection.json
+
+rspec:
+  script:
+    - rspec
+
+brakeman:
+  script:
+    - bundle exec brakeman -z -q&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Gitlab CI Runner 는 Docker 에서 동작하도록 설정을 한 상태입니다. 기본적으로 ruby 2.4 버전의 docker image 를 기본으로 하여, 프로젝트에서 사용하는 mysql, redis 를 이용할 수 있도록 서비스를 연결합니다.&lt;/p&gt;
+&lt;p&gt;Docker 환경에서 사용할 환경변수는 &lt;code class=&quot;language-text&quot;&gt;variables&lt;/code&gt; 항목으로 설정을 할 수 있습니다. 환경변수에 해당하는 ENV 설정은 여기를 통해 진행하세요.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;before_script&lt;/code&gt; 에서는 본격적인 CI Script 를 돌리기 전에 수행하고자 하는 항목들을 설정할 수 있습니다. &lt;code class=&quot;language-text&quot;&gt;before_script&lt;/code&gt; 항목을 하나씩 뜯어보자면 다음과 같습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;before_script:
+  # docker 내에 ruby on rails 환경을 운영하기 위한 기본 libraries 를 설치합니다.
+  - ruby -v
+  - which ruby
+  - apt-get update -y
+  - apt-get install -y libssl-dev build-essential wget
+
+  # newman cli 를 설치하기 위해서는 npm 을 통해 설치하게 됩니다.
+  # npm 이 기본적으로 설치되어 있지 않기 때문에 npm 설치를 위해
+  # nvm 을 우선 설치하고 npm install newman -g 를 통해 newman 을 설치합니다.
+  - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+  - source /root/.bashrc
+  - nvm install 6.6.0
+  - nvm use 6.6.0
+  - node -v
+  - npm install newman -g
+ 
+  # rails 로 제작한 프로젝트를 실행하기 위해
+  # 아래의 구문을 차례로 수행합니다.
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install --quiet
+  - bundle exec rake db:create --quiet
+  - bundle exec rake db:migrate --quiet
+  - bundle exec rake db:test:prepare --quiet&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;before_script&lt;/code&gt; 를 통해 &lt;code class=&quot;language-text&quot;&gt;rails&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;newman&lt;/code&gt; 을 동작시킬 수 있는 환경이 구성이 되었다면,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;api 테스트&lt;/li&gt;
+&lt;li&gt;테스트 수행을 위한 rspec&lt;/li&gt;
+&lt;li&gt;보안 취약성 점검을 위한 brakeman&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;.gitlab-ci.yml 에 위의 항목을 설정하면 Gitlab CI Runner 에서 각각의 항목에 대해 Job 이 동작하게 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/gitlab.png&quot; alt=&quot;Gitlab&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이제 Gitlab 에 접속하여 프로젝트 Repository 에 들어가 좌측 메뉴에 있는 &lt;code class=&quot;language-text&quot;&gt;CI / CD&lt;/code&gt; 내의 &lt;code class=&quot;language-text&quot;&gt;Pipeline&lt;/code&gt; 을 눌러보면 .gitlab-ci.yml 에 의해 수행되는 자동화 파이프라인을 확인할 수 있습니다. 파이프라인을 클릭하여 세부 Job 을 보면 아래와 같은 화면을 보실 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/job.png&quot; alt=&quot;Job&quot;&gt;&lt;/p&gt;
+&lt;p&gt;각각의 Job 이 모두 성공으로 떨어져야 파이프라인이 성공적으로 끝나게 되며 Build 는 &lt;code class=&quot;language-text&quot;&gt;Passed&lt;/code&gt; 로 떨어집니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/rspec.png&quot; alt=&quot;RSpec&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 이미지는 &lt;a href=&quot;http://rspec.info/&quot;&gt;RSpec&lt;/a&gt; 을 이용한 테스트 수행 결과입니다. Rspec 에 대한 자세한 설명은 여기에서 진행하지 않습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/brakeman.png&quot; alt=&quot;Brakeman&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 이미지는 &lt;a href=&quot;https://github.com/presidentbeef/brakeman&quot;&gt;Brakeman&lt;/a&gt; 을 이용하여 보안 취약점을 점검하는 과정입니다. 만약, 코드에 보안 취약점이 있다면 Job 은 실패로 떨어지게 되고 Build 는 실패로 판명날 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/newman.png&quot; alt=&quot;Newman&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 이미지는 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collection_runs/command_line_integration_with_newman/&quot;&gt;Newman Cli&lt;/a&gt; 를 이용하여 API TEST 를 점검하는 과정입니다.&lt;/p&gt;
+&lt;p&gt;위와 같이 Gitlab CI 를 통해 테스트 + 보안 취약점 점검 + API 테스트까지 완료해 보았습니다. 이제 남은 것은 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;API 를 어떻게 쉽고 빠르게 문서화를 할 것인가? &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;라는 질문을 해결해야 할 때입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;postman-을-이용한-api-문서화&quot;&gt;&lt;a href=&quot;#postman-%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-api-%EB%AC%B8%EC%84%9C%ED%99%94&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Postman 을 이용한 API 문서화&lt;/h3&gt;
+&lt;p&gt;Postman 을 이용한 이유는 쉽게 API 를 명세화하고, 테스트를 수행할 수 있다는 점이 좋아서 사용한 것도 있지만, Postman 에 숨은 기능이 하나 더 있다면 바로 문서화를 상당히 쉽게 진행할 수 있다는 것입니다.&lt;/p&gt;
+&lt;p&gt;위에서 설명한 &lt;a href=&quot;https://learning.getpostman.com/docs/postman/collections/creating_collections/&quot;&gt;Postman Collection&lt;/a&gt; 에는 Collection 의 내용을 Postman 웹사이트로 &lt;code class=&quot;language-text&quot;&gt;Publish&lt;/code&gt; 할 수 있는 기능이 제공됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/publish.png&quot; alt=&quot;Collection Publish&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위와 같이 Collection 을 Publish 하게 되면 다음과 같이 멋진 API Document 를 출력할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/490504b627a15d108f1afe60362ce9da/document.png&quot; alt=&quot;Document&quot;&gt;&lt;/p&gt;
+&lt;p&gt;어떤가요? API 문서가 멋지지 않나요? 이렇게 만들어진 문서는 &lt;code class=&quot;language-text&quot;&gt;Run in Postman&lt;/code&gt; 버튼으로 Postman 이 설치된 환경이라면 어디서든 편리하게 실행해볼 수 있습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;이상으로 Gitlab CI + Postman 을 통해 API 테스트 수행 및 API 문서화까지 진행해 봤습니다. 예제에서는 Ruby on Rails 를 이용하였지만 본인이 이용하는 다른 개발 환경에서도 Gitlab CI 와 Postman 은 동일하게 수행할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;아무쪼록 이 글이 API 테스트와 문서화를 고민하고 있는 다른 개발자 분들에게 도움이 되었으면 합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Jekyll 에서 Gatsby 로 블로그 이사하기]]></title><description><![CDATA[기존  제 블로그 는 Jekyll 기반으로 만들어 Github 로 배포를 했습니다.
 오랫동안 블로그를 방치하다가 근래 정리해야 할 것들이 있어서 다시 만지려고 하니 이제는 Jekyll 도 설치 중에 오류가 발생하기도 하고, 요즘엔  React…]]></description><link>https://wecanooo.github.io/story/jekyll-에서-gatsby-로-블로그-이사하기</link><guid isPermaLink="false">https://wecanooo.github.io/story/jekyll-에서-gatsby-로-블로그-이사하기</guid><category><![CDATA[jekyll]]></category><category><![CDATA[react]]></category><category><![CDATA[gatsby]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Mon, 17 Dec 2018 23:57:00 GMT</pubDate><content:encoded>&lt;p&gt;기존 &lt;a href=&quot;https://wecanooo.github.com/blog/&quot;&gt;제 블로그&lt;/a&gt;는 Jekyll 기반으로 만들어 Github 로 배포를 했습니다.
 오랫동안 블로그를 방치하다가 근래 정리해야 할 것들이 있어서 다시 만지려고 하니 이제는 Jekyll 도 설치 중에 오류가 발생하기도 하고, 요즘엔 &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; 기반의 Static Site Generator 들이 대세인지라 이번참에 저도 블로그 환경을 새롭게 단장하기로 마음을 먹었습니다.&lt;/p&gt;
 &lt;p&gt;후보군을 보던 중 단연 눈에 띄는 것은 &lt;a href=&quot;https://nextjs.org/&quot;&gt;Next.js&lt;/a&gt; 와 &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt; 두가지의 React 기반 Generator 였습니다.&lt;/p&gt;
