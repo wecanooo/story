@@ -11,7 +11,7 @@ tags:
   - postman
 ---
 
-![Rails API](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/b5a3f174d257be33bbbc1e6e7f787f6a/api.webp)
+![Rails API](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/dd18be1a7f3fbc91789207560798bb34/rails_api.png)
 
 ### Rails API 를 만들어 가면서의 고민
 
