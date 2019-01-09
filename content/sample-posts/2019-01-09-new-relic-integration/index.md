@@ -23,7 +23,7 @@ tags:
 
 Rails 로 웹 개발을 진행하고 있던 차에 New Relic 은 상당히 반가운 서비스였고, 당시에는 무료 기능만으로도 스타트업에서 요구되는 기본 모니터링이 가능했으며, 심지어 New Relic Agent 를 아주 쉽게 연동할 수 있는 [Gem](https://github.com/newrelic/rpm) 이 있었기에 연동하는데는 별 어려움이 없었습니다.
 
-그렇게 New Relic 을 어렴풋이 기억하고 있던 차에 현재의 회사에서 New Relic 을 통해 인프라 모니터링을 한다기에 다시 연동을 해 봤습니다.
+그렇게 New Relic 을 어렴풋이 기억하고 있던 차에 현재의 회사에서 New Relic 을 통해 애플리케이션 모니터링을 한다기에 다시 연동을 해 봤습니다.
 
 ---
 
@@ -49,7 +49,7 @@ gem 'newrelic_rpm'
 bundle install 을 통해 gem 을 설치한 뒤 터미널에서 newrelic command 를 통해 초기 셋업 파일을 생성합니다. 만약, newrelic command 를 인식하지 못하면 터미널을 종료했다가 다시 시작해 주세요.
 
 ```shell
-newrelic install --license_key="YOUR_KEY" "어플리케이션 이름"
+newrelic install --license_key="YOUR_KEY" "애플리케이션 이름"
 ```
 
 위의 명령어를 통해 초기 파일을 생성하면 `newrelic.yml` 파일이 생성됩니다. 생성된 newrelic.yml 파일은 다음과 같습니다.
@@ -106,4 +106,4 @@ production:
 
 위와 같이 간단한 설정 후 App 배포를 진행하면, 이제 [New Relic](https://rpm.newrelic.com/) 을 방문하여 각종 모니터링 정보를 확인할 수 있습니다.
 
-![New Relic](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/2a041c5fdcfdb93da6360ccb5cc40ad9/download.jpg)
+![New Relic](https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/b4e350dc4cfda39633fe8ff835fb2514/apm-landing-page.png)
