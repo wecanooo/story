@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[기억하기 귀찮은 잡다한 기술이야기]]></title><description><![CDATA[기억하자니 쓸데없이 귀찮고, 기억 안하자니 모르면 상당히 귀찮은 것들을 기록합니다.]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>기억하기 귀찮은 잡다한 기술이야기</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Wed, 02 Jan 2019 11:40:01 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2019]]></copyright><item><title><![CDATA[dyld Library not loaded 해결]]></title><description><![CDATA[ 를 사용하기 위해 Mac Book 에 MongoDB 를 설치한 뒤 아래와 같은 오류가 발생되었습니다. 해당 오류를 해결하는 방법을 찾던 중  oh-my-zsh 이슈  에 같은 내용이 해결이 되었습니다.]]></description><link>https://wecanooo.github.io/story/dyld-library-not-loaded-해결</link><guid isPermaLink="false">https://wecanooo.github.io/story/dyld-library-not-loaded-해결</guid><category><![CDATA[shell]]></category><category><![CDATA[zsh]]></category><category><![CDATA[update]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Tue, 01 Jan 2019 16:37:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;brew install mongodb&lt;/code&gt; 를 사용하기 위해 Mac Book 에 MongoDB 를 설치한 뒤 아래와 같은 오류가 발생되었습니다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[기억하기 귀찮은 잡다한 기술이야기]]></title><description><![CDATA[기억하자니 쓸데없이 귀찮고, 기억 안하자니 모르면 상당히 귀찮은 것들을 기록합니다.]]></description><link>https://wecanooo.github.io/story</link><image><url>https://wecanooo.github.io/story/logos/logo-512.png</url><title>기억하기 귀찮은 잡다한 기술이야기</title><link>https://wecanooo.github.io/story</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Wed, 09 Jan 2019 07:21:50 GMT</lastBuildDate><atom:link href="https://wecanooo.github.io/story/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[wecanooo]]></author><copyright><![CDATA[wecanooo@gmail.com © 2019]]></copyright><item><title><![CDATA[New Relic 서비스 연동하기]]></title><description><![CDATA[인프라스트럭쳐 모니터링(Infrastructure Monitoring) 하면 예전에는 대체적으로 하드웨어 중심의 모니터링 업무를 생각하기 쉬웠습니다. 하지만, 클라우드 서비스가 보편화된 지금은 이러한 인프라스트럭쳐 모니터링(Infrastructure…]]></description><link>https://wecanooo.github.io/story/new-relic-서비스-연동하기</link><guid isPermaLink="false">https://wecanooo.github.io/story/new-relic-서비스-연동하기</guid><category><![CDATA[newrelic]]></category><category><![CDATA[monitoring]]></category><category><![CDATA[system]]></category><category><![CDATA[rpm]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Wed, 09 Jan 2019 16:37:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/2a041c5fdcfdb93da6360ccb5cc40ad9/download.jpg&quot; alt=&quot;New Relic&quot;&gt;&lt;/p&gt;
+&lt;p&gt;인프라스트럭쳐 모니터링(Infrastructure Monitoring) 하면 예전에는 대체적으로 하드웨어 중심의 모니터링 업무를 생각하기 쉬웠습니다.&lt;/p&gt;
+&lt;p&gt;하지만, 클라우드 서비스가 보편화된 지금은 이러한 인프라스트럭쳐 모니터링(Infrastructure Monitoring) 을 간편하게 연동하고 쉽게 정보를 확인할 수 있는 서비스들이 많이 있습니다.&lt;/p&gt;
+&lt;p&gt;제가 스타트업에서 여러 기술들을 적용해 나가고 있을 즈음인 2014년에 스타트업계에서 화두가 되는 서비스 회사가 있었었는데, New Relic 이 바로 그것입니다.&lt;/p&gt;
+&lt;p&gt;Rails 로 웹 개발을 진행하고 있던 차에 New Relic 은 상당히 반가운 서비스였고, 당시에는 무료 기능만으로도 스타트업에서 요구되는 기본 모니터링이 가능했으며, 심지어 New Relic Agent 를 아주 쉽게 연동할 수 있는 &lt;a href=&quot;https://github.com/newrelic/rpm&quot;&gt;Gem&lt;/a&gt; 이 있었기에 연동하는데는 별 어려움이 없었습니다.&lt;/p&gt;
+&lt;p&gt;그렇게 New Relic 을 어렴풋이 기억하고 있던 차에 현재의 회사에서 New Relic 을 통해 인프라 모니터링을 한다기에 다시 연동을 해 봤습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;new-relic-계정생성&quot;&gt;&lt;a href=&quot;#new-relic-%EA%B3%84%EC%A0%95%EC%83%9D%EC%84%B1&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;New Relic 계정생성&lt;/h3&gt;
+&lt;p&gt;우선 New Relic 사용을 위해 아래의 단계를 진행합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://newrelic.com/signup&quot;&gt;New Relic 회원가입&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;입력한 Email 을 통해 전송된 메일을 통해 계정 확인 진행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위의 2단계를 진행한 뒤 &lt;a href=&quot;https://rpm.newrelic.com/accounts/&quot;&gt;Account Setting&lt;/a&gt; 메뉴로 들어가면 Serial Key 를 확인할 수 있습니다.&lt;/p&gt;
+&lt;h3 id=&quot;rails-app-에-new-relic-연동&quot;&gt;&lt;a href=&quot;#rails-app-%EC%97%90-new-relic-%EC%97%B0%EB%8F%99&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rails App 에 New Relic 연동&lt;/h3&gt;
+&lt;p&gt;프로젝트 내의 Gemfile 에 New Relic Ruby Agent Gem 을 설치합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem &lt;span class=&quot;token string&quot;&gt;&apos;newrelic_rpm&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;bundle install 을 통해 gem 을 설치한 뒤 터미널에서 newrelic command 를 통해 초기 셋업 파일을 생성합니다. 만약, newrelic command 를 인식하지 못하면 터미널을 종료했다가 다시 시작해 주세요.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;newrelic install --license_key=&amp;quot;YOUR_KEY&amp;quot; &amp;quot;어플리케이션 이름&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;위의 명령어를 통해 초기 파일을 생성하면 &lt;code class=&quot;language-text&quot;&gt;newrelic.yml&lt;/code&gt; 파일이 생성됩니다. 생성된 newrelic.yml 파일은 다음과 같습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;#
+# This file configures the New Relic Agent.  New Relic monitors Ruby, Java,
+# .NET, PHP, Python, Node, and Go applications with deep visibility and low
+# overhead.  For more information, visit www.newrelic.com.
+#
+# Generated January 08, 2019
+#
+# This configuration file is custom generated for STUnitas_2
+#
+# For full documentation of agent configuration options, please refer to
+# https://docs.newrelic.com/docs/agents/ruby-agent/installation-configuration/ruby-agent-configuration
+
+common: &amp;amp;default_settings
+  # Required license key associated with your New Relic account.
+  license_key: license key
+
+  # Your application name. Renaming here affects where data displays in New
+  # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
+  app_name: My Application
+
+  # To disable the agent regardless of other settings, uncomment the following:
+  # agent_enabled: false
+
+  # Logging level for log/newrelic_agent.log
+  log_level: info
+
+
+# Environment-specific settings are in this section.
+# RAILS_ENV or RACK_ENV (as appropriate) is used to determine the environment.
+# If your application has other named environments, configure them here.
+development:
+  &amp;lt;&amp;lt;: *default_settings
+  app_name: My Application (Development)
+
+test:
+  &amp;lt;&amp;lt;: *default_settings
+  # It doesn&amp;#39;t make sense to report to New Relic from automated test runs.
+  monitor_mode: false
+
+staging:
+  &amp;lt;&amp;lt;: *default_settings
+  app_name: My Application (Staging)
+
+production:
+  &amp;lt;&amp;lt;: *default_settings&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;만약, development 모드에서는 New Relic 으로 정보전송을 하고 싶지 않다면, &lt;code class=&quot;language-text&quot;&gt;monitor_mode: false&lt;/code&gt; 를 설정합니다.&lt;/p&gt;
+&lt;p&gt;위와 같이 간단한 설정 후 App 배포를 진행하면, 이제 &lt;a href=&quot;https://rpm.newrelic.com/&quot;&gt;New Relic&lt;/a&gt; 을 방문하여 각종 모니터링 정보를 확인할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/2a041c5fdcfdb93da6360ccb5cc40ad9/download.jpg&quot; alt=&quot;New Relic&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[dyld Library not loaded 해결]]></title><description><![CDATA[ 를 사용하기 위해 Mac Book 에 MongoDB 를 설치한 뒤 아래와 같은 오류가 발생되었습니다. 해당 오류를 해결하는 방법을 찾던 중  oh-my-zsh 이슈  에 같은 내용이 해결이 되었습니다.]]></description><link>https://wecanooo.github.io/story/dyld-library-not-loaded-해결</link><guid isPermaLink="false">https://wecanooo.github.io/story/dyld-library-not-loaded-해결</guid><category><![CDATA[shell]]></category><category><![CDATA[zsh]]></category><category><![CDATA[update]]></category><dc:creator><![CDATA[wecanooo]]></dc:creator><pubDate>Tue, 01 Jan 2019 16:37:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;brew install mongodb&lt;/code&gt; 를 사용하기 위해 Mac Book 에 MongoDB 를 설치한 뒤 아래와 같은 오류가 발생되었습니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://st-kr-tutor.s3-ap-northeast-2.amazonaws.com/got/f8bec021d5d36dcd0930942693566a15/11.png&quot; alt=&quot;zsh error&quot;&gt;&lt;/p&gt;
 &lt;p&gt;해당 오류를 해결하는 방법을 찾던 중 &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/issues/7033&quot;&gt;oh-my-zsh 이슈&lt;/a&gt; 에 같은 내용이 해결이 되었습니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
